@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-02-23 15:59:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+I have received my PhD with the thesis <a href="https://freidok.uni-freiburg.de/data/225448">Symbolic Search for Optimal Planning with Expressive Extensions</a>! :tada:
