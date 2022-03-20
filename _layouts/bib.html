@@ -151,7 +151,33 @@
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
+            <!--{% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}-->
+{% highlight bibtex %}
+@{{ entry.type }}
+{%- raw -%}{{% endraw %}{{entry.key}},
+  author =       "{{ entry.author }}",
+  title =        "{{ entry.title }}",
+  {%- if entry.booktitle %}
+  booktitle =    "{{ entry.booktitle }}",
+  {%- endif %}
+  {%- if entry.journal %}
+  journal =      "{{ entry.journal }}",
+  {%- endif %}
+  {%- if entry.volume %}
+  volume =       "{{ entry.volume }}",
+  {%- endif %}
+  {%- if entry.number %}
+  number =       "{{ entry.number }}",
+  {%- endif %}
+  {%- if entry.editor %}
+  editor =       "{{ entry.editor }}",
+  {%- endif %}
+  {%- if entry.pages %}
+  pages =        "{{ entry.pages }}",
+  {%- endif %}
+  year =         "{{ entry.year }}"
+{% raw %}}{% endraw %}
+{% endhighlight %}
           </div>
           {%- endif %}
         </div>
