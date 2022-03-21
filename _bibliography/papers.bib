@@ -11,7 +11,6 @@
                   (ICAPS 2022)",
   year =         "2022",
   publisher =    "AAAI Press",
-  note =         "To appear."
 }
 
 @InProceedings{speck-et-al-icaps2021a,
@@ -87,4 +86,259 @@
                   that domain-wise learned policies, which take the internal 
                   search dynamics of a planning system into account, can exceed 
                   existing approaches."
+}
+
+@InProceedings{drexler-et-al-icaps2021,
+  bibtex_show =  "true",
+  pdf =          "drexler-etal-icaps2021.pdf",
+  code =         "https://github.com/drexlerd/fast-downward-sstcp",
+  data =         "https://zenodo.org/record/5078938",
+  poster =       "drexler-etal-icaps2021-poster.pdf",
+  author =       "Dominik Drexler and Jendrik Seipp and David Speck",
+  title =        "Subset-Saturated Transition Cost Partitioning",
+  editor =       "Robert P. Goldman and Susanne Biundo and Michael Katz",
+  booktitle =    "Proceedings of the Thirty-First International 
+                  Conference on Automated Planning and Scheduling 
+                  (ICAPS 2021)",
+  year =         "2021",
+  publisher =    "AAAI Press",
+  pages =        "131--139",
+  abstract  =    "Cost partitioning admissibly combines the information from 
+                  multiple heuristics for optimal state-space search. One of the 
+                  strongest cost partitioning algorithms is saturated cost 
+                  partitioning. It considers the heuristics in sequence and 
+                  assigns to each heuristic the minimal fraction of the 
+                  remaining costs that are needed for preserving all heuristic 
+                  estimates. Saturated cost partitioning has recently been 
+                  generalized in two directions: first, by allowing to use 
+                  different costs for the transitions induced by the same 
+                  operator, and second, by preserving the heuristic estimates 
+                  for only a subset of states. In this work, we unify these two 
+                  generalizations and show that the resulting subset-saturated 
+                  transition cost partitioning algorithm usually yields 
+                  stronger heuristics than the two generalizations by 
+                  themselves."
+}
+
+@InProceedings{speck-katz-aaai2021,
+  bibtex_show =  "true",
+  pdf =          "speck-katz-aaai2021.pdf",
+  code =         "https://github.com/speckdavid/symbolic-osp",
+  poster =       "speck-katz-aaai2021-poster.pdf",
+  title =        "Symbolic Search for Oversubscription Planning",
+  author =       "David Speck and Michael Katz",
+  editor =       "Kevin Leyton-Brown and Mausam",
+  booktitle =    "Proceedings of the Thirty-Fifth {AAAI} Conference on
+                  Artificial Intelligence ({AAAI} 2021)",
+  publisher =    "{AAAI} Press",
+  year =         "2021",
+  pages =        "11972--11980",
+  abstract =     "The objective of optimal oversubscription planning is to find 
+                  a plan that yields an end state with a maximum utility while 
+                  keeping plan cost under a certain bound. In practice, the 
+                  situation occurs whenever a large number of possible, often 
+                  competing goals of varying value exist, or the resources are 
+                  not sufficient to achieve all goals. In this paper, we 
+                  investigate the use of symbolic search for optimal 
+                  oversubscription planning. Specifically, we show how to apply 
+                  symbolic forward search to oversubscription planning tasks and 
+                  prove that our approach is sound, complete and optimal. An 
+                  empirical analysis shows that our symbolic approach favorably 
+                  competes with explicit state-space heuristic search, the 
+                  current state of the art for oversubscription planning."
+}
+
+@InProceedings{behnke-speck-aaai2021,
+  bibtex_show =  "true",
+  pdf =          "behnke-speck-aaai21.pdf",
+  poster =       "behnke-speck-aaai21-poster.pdf",
+  code =         "https://github.com/galvusdamor/pandaPIengineSymbolic",
+  title =        "Symbolic Search for Optimal Total-Order HTN Planning",
+  author =       "Gregor Behnke and David Speck",
+  editor =       "Kevin Leyton-Brown and Mausam",
+  booktitle =    "Proceedings of the Thirty-Fifth {AAAI} Conference on
+                  Artificial Intelligence ({AAAI} 2021)",
+  publisher =    "{AAAI} Press",
+  year =         "2021",
+  pages =        "11744--11754",
+  abstract =     "Symbolic search has proven to be a useful approach to optimal 
+                  classical planning. In Hierarchical Task Network (HTN) 
+                  planning, however, there is little work on optimal planning. 
+                  One reason for this is that in HTN planning, most algorithms 
+                  are based on heuristic search, and admissible heuristics have 
+                  to incorporate the structure of the task network in order to 
+                  be informative. In this paper, we present a novel approach to 
+                  optimal (totally-ordered) HTN planning, which is based on 
+                  symbolic search. An empirical analysis shows that our symbolic 
+                  approach outperforms the current state of the art for optimal 
+                  totally-ordered HTN planning."
+}
+
+@InProceedings{speck-et-al-icaps2020,
+  bibtex_show =  "true",
+  pdf =          "speck-etal-icaps2020.pdf",
+  poster =       "speck-etal-icaps2020-poster.pdf",
+  title =        "When Perfect is not Good Enough: On the Search Behaviour 
+                  of Symbolic Heuristic Search",
+  author =       "David Speck and Florian Gei{\ss}er and Robert Mattm{\"u}ller",
+  editor =       "J. Christopher Beck and Erez Karpas and Shirin Sohrabi",
+  booktitle =    "Proceedings of the Thirtieth International 
+                  Conference on Automated Planning and Scheduling 
+                  (ICAPS 2020)",
+  publisher =    "{AAAI} Press",
+  year =         "2020",
+  pages =        "263--271",
+  abstract =     "Symbolic search has proven to be a competitive approach to 
+                  cost-optimal planning, as it compactly represents sets of 
+                  states by symbolic data structures. While heuristics for 
+                  symbolic search exist, symbolic bidirectional blind search 
+                  empirically outperforms its heuristic counterpart and is 
+                  therefore the dominant search strategy. This prompts the 
+                  question of why heuristics do not seem to pay off in symbolic 
+                  search. As a first step in answering this question, we 
+                  investigate the search behaviour of symbolic heuristic search 
+                  by means of BDDA*. Previous work identified the partitioning 
+                  of state sets according to their heuristic values as the main 
+                  bottleneck. We theoretically and empirically evaluate the 
+                  search behaviour of BDDA* and reveal another fundamental 
+                  problem: we prove that the use of a heuristic does not always 
+                  improve the search performance of BDDA*. In general, even the 
+                  perfect heuristic can exponentially deteriorate search 
+                  performance."
+}
+
+@InProceedings{speck-et-al-icaps2020wsprl,
+  bibtex_show =  "true",
+  arxiv =        "2006.08246",
+  pdf =          "speck-etal-prl2020.pdf",
+  code =         "https://github.com/speckdavid/rl-plan",
+  title =        "Learning Heuristic Selection with Dynamic Algorithm 
+                  Configuration",
+  author =       "David Speck and Andr{\'e} Biedenkapp and Frank Hutter and
+                  Robert Mattm{\"u}ller and Marius Lindauer",
+  booktitle =    "ICAPS 2020 Workshop on Bridging the Gap Between AI 
+                  Planning and Reinforcement Learning (PRL)",
+  year =         "2020",
+  pages =        "61--69",
+  note =         "Superseded by the ICAPS 2021 paper by the same name",
+  abstract =     "A key challenge in satisficing planning is to use multiple 
+                  heuristics within one heuristic search. An aggregation of 
+                  multiple heuristic estimates, for example by taking the 
+                  maximum, has the disadvantage that bad estimates of a single 
+                  heuristic can negatively affect the whole search. Since the 
+                  performance of a heuristic varies from instance to instance, 
+                  approaches such as algorithm selection can be successfully 
+                  applied. In addition, alternating between multiple heuristics 
+                  during the search makes it possible to use all heuristics 
+                  equally and improve performance. However, all these approaches 
+                  ignore the internal search dynamics of a planning system, 
+                  which can help to select the most helpful heuristics for the 
+                  current expansion step. We show that dynamic algorithm 
+                  configuration can be used for dynamic heuristic selection 
+                  which takes into account the internal search dynamics of a 
+                  planning system. Furthermore, we prove that this approach 
+                  generalizes over existing approaches and that it can 
+                  exponentially improve the performance of the heuristic search. 
+                  To learn dynamic heuristic selection, we propose an approach 
+                  based on reinforcement learning and show empirically that 
+                  domain-wise learned policies, which take the internal search 
+                  dynamics of a planning system into account, can exceed 
+                  existing approaches in terms of coverage."
+}
+
+@InProceedings{drexler-et-al-icaps2020wshsdip,
+  bibtex_show =  "true",
+  pdf =          "drexler-etal-hsdip2020.pdf",
+  code =         "https://zenodo.org/record/4065414",
+  data =         "https://zenodo.org/record/4065414",
+  title =        "Subset-Saturated Transition Cost Partitioning for Optimal 
+                  Classical Planning",
+  author =       "Dominik Drexler and David Speck and Robert Mattm{\"u}ller",
+  booktitle =    "ICAPS 2020 Workshop on Heuristics and Search
+                  for Domain-Independent Planning (HSDIP)",
+  year =         "2020",
+  pages =        "23--31",
+  note =         {Superseded by the ICAPS 2021 paper "Subset-Saturated Transition 
+                  Cost Partitioning"},
+  abstract =     "Cost partitioning admissibly combines the information from 
+                  multiple heuristics for state-space search. We use a greedy 
+                  method called saturated cost partitioning that considers the 
+                  heuristics in sequence and assigns the minimal fraction of 
+                  the remaining costs that it needs to preserve the heuristic 
+                  estimates. In this work, we address the problem of using more 
+                  expressive transition cost functions with saturated cost 
+                  partitioning to obtain stronger heuristics. Our contribution 
+                  is subset-saturated transition cost partitioning that combines 
+                  the concepts of using transition cost functions and 
+                  prioritizing states that look more important during the 
+                  search. Our empirical evaluation shows that this approach 
+                  still causes too much computational overhead but leads to more 
+                  informed heuristics."
+}
+
+@InProceedings{geisser-et-al-socs2020,
+  bibtex_show =  "true",
+  pdf =          "geisser-etal-socs2020.pdf",
+  code =         "https://zenodo.org/record/3749869",
+  data =         "https://zenodo.org/record/3749869",
+  title =        "Trial-based Heuristic Tree Search for {MDP}s with 
+                  Factored Action Spaces",
+  author =       "Florian Gei{\ss}er and David Speck and Thomas Keller",
+  editor =       "Daniel Harabor and Mauro Vallati",
+  booktitle =    "Proceedings of the 13th Annual Symposium on
+                  Combinatorial Search (SoCS 2020)",
+  publisher =    "{AAAI} Press",
+  year =         "2020",
+  pages =        "38--47",
+  abstract =     "<p>MDPs with factored action spaces, i.e. where actions are 
+                  described as assignments to a set of action variables, allow 
+                  reasoning over action variables instead of action states, yet 
+                  most algorithms only consider a grounded action 
+                  representation. This includes algorithms that are 
+                  instantiations of the trial-based heuristic tree search (THTS) 
+                  framework, such as AO* or UCT.</p> 
+                  <p>To be able to reason over factored action spaces, we 
+                  propose a generalisation of THTS where nodes that branch over 
+                  all applicable actions are replaced with subtrees that consist 
+                  of nodes that represent the decision for a single action 
+                  variable. We show that many THTS algorithms retain their 
+                  theoretical properties under the generalised framework, and 
+                  show how to approximate any state-action heuristic to a 
+                  heuristic for partial action assignments. This allows to guide 
+                  a UCT variant that is able to create exponentially fewer nodes 
+                  than the same algorithm that considers ground actions. An 
+                  empirical evaluation on the benchmark set of the probabilistic 
+                  track of the latest International Planning Competition 
+                  validates the benefits of the approach.</p>"
+}
+
+@InProceedings{speck-et-al-aaai2020,
+  bibtex_show =  "true",
+  pdf =          "speck-etal-aaai2020.pdf",
+  poster =       "speck-etal-aaai2020-poster.pdf",
+  code =         "https://github.com/speckdavid/symk",
+  title =        "Symbolic Top-k Planning",
+  author =       "David Speck and  Robert Mattm{\"u}ller and Bernhard Nebel",
+  editor =       "Vincent Conitzer and Fei Sha",
+  booktitle =    "Proceedings of the Thirty-Fourth {AAAI} Conference on
+                  Artificial Intelligence ({AAAI} 2020)",
+  publisher =    "{AAAI} Press",
+  year =         "2020",
+  pages =        "9967--9974",
+  abstract =     "The objective of top-k planning is to determine a set of k 
+                  different plans with lowest cost for a given planning task. 
+                  In practice, such a set of best plans can be preferred to a 
+                  single best plan generated by ordinary optimal planners, as 
+                  it allows the user to choose between different alternatives 
+                  and thus take into account preferences that may be difficult 
+                  to model. In this paper we show that, in general, the decision 
+                  problem version of top-k planning is PSPACE-complete, as is 
+                  the decision problem version of ordinary classical planning. 
+                  This does not hold for polynomially bounded plans for which 
+                  the decision problem turns out to be PP-hard, while the 
+                  ordinary case is NP-hard. We present a novel approach to top-k 
+                  planning, called SYM-K, which is based on symbolic search, and 
+                  prove that SYM-K is sound and complete. Our empirical analysis 
+                  shows that SYM-K exceeds the current state of the art for both 
+                  small and large k."
 }
