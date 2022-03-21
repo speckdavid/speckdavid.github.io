@@ -75,12 +75,14 @@
           {%- capture entrymonth -%}{%- endcapture -%}
           {%- capture entryyear -%}{%- endcapture -%}
           {% if entry.type == "article" -%}
-            {%- capture entrytype -%}<em>{{entry.journal}}</em>.{%- endcapture -%}
+            {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em>.{%- endcapture -%}
+            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em>{%- endcapture -%}
           {%- endif -%}
           {%- if entry.pages -%}
-            {%- capture entrypages -%}pp. {{entry.pages}}.{%- endcapture -%}
+            {%- capture entrypages -%}, pp. {{entry.pages}}.{%- endcapture -%}
+          {%- else -%}
+            {%- capture entrypages -%}.{%- endcapture -%}
           {%- endif -%}
           {%- if entry.month -%}
             {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
@@ -105,6 +107,9 @@
           {%- if entry.bibtex_show %}
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           {%- endif %}
+          {%- if entry.code %}
+            <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+          {%- endif %}
           {%- if entry.html %}
             <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
           {%- endif %}
@@ -124,9 +129,6 @@
           {%- endif %}
           {%- if entry.blog %}
             <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
-          {%- endif %}
-          {%- if entry.code %}
-            <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
           {%- endif %}
           {%- if entry.poster %}
             {% if entry.poster contains '://' -%}

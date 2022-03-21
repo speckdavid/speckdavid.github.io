@@ -16,7 +16,8 @@
 
 @InProceedings{speck-et-al-icaps2021a,
   bibtex_show =  "true",
-  pdf =          "speck-etal-icaps2021.pdf",            
+  pdf =          "speck-etal-icaps2021.pdf",
+  poster =       "speck-etal-icaps2021-poster.pdf",            
   author =       "David Speck and David Borukhson and 
                   Robert Mattm{\"u}ller and Bernhard Nebel",
   title =        "On the Compilability and Expressive Power of 
@@ -48,6 +49,10 @@
 
 @InProceedings{speck-et-al-icaps2021b,
   bibtex_show =  "true",
+  pdf =          "speck-etal-icaps2021b.pdf",
+  code =         "https://github.com/speckdavid/rl-plan",
+  arxiv =        "2006.08246",
+  poster =       "speck-etal-icaps2021b-poster.pdf",
   author =       "David Speck and Andr{\'e} Biedenkapp and Frank Hutter and
                   Robert Mattm{\"u}ller and Marius Lindauer",
   title =        "Learning Heuristic Selection with Dynamic Algorithm 
@@ -58,5 +63,28 @@
                   (ICAPS 2021)",
   year =         "2021",
   publisher =    "AAAI Press",
-  pages     =    "597--605"
+  pages =        "597--605",
+  abstract =     "A key challenge in satisficing planning is to use multiple 
+                  heuristics within one heuristic search. An aggregation of 
+                  multiple heuristic estimates, for example by taking the 
+                  maximum, has the disadvantage that bad estimates of a single 
+                  heuristic can negatively affect the whole search. Since the 
+                  performance of a heuristic varies from instance to instance, 
+                  approaches such as algorithm selection can be successfully 
+                  applied. In addition, alternating between multiple heuristics 
+                  during the search makes it possible to use all heuristics 
+                  equally and improve performance. However, all these approaches 
+                  ignore the internal search dynamics of a planning system, 
+                  which can help to select the most useful heuristics for the 
+                  current expansion step. We show that dynamic algorithm 
+                  configuration can be used for dynamic heuristic selection 
+                  which takes into account the internal search dynamics of a 
+                  planning system. Furthermore, we prove that this approach 
+                  generalizes over existing approaches and that it can 
+                  exponentially improve the performance of the heuristic 
+                  search. To learn dynamic heuristic selection, we propose an 
+                  approach based on reinforcement learning and show empirically 
+                  that domain-wise learned policies, which take the internal 
+                  search dynamics of a planning system into account, can exceed 
+                  existing approaches."
 }
