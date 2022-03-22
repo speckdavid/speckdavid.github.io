@@ -14,9 +14,6 @@
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-10">
-        {% if entry.type == "thesis" -%}
-          {{reference}}
-        {%- else %}
           <!-- Author -->
           <div class="author">
           {%- for author in entry.author_array -%}
@@ -77,11 +74,13 @@
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em>{%- endcapture -%}
+            {%- capture entrytype -%}In <em>{{entry.booktitle}}</em>{%- endcapture -%}
+          {%- elsif entry.type == "phdthesis" -%}
+            {%- capture entrytype -%}PhD thesis, {{entry.school}},{%- endcapture -%}
           {%- endif -%}
           {%- if entry.pages -%}
             {%- capture entrypages -%}, pp. {{entry.pages}}.{%- endcapture -%}
-          {%- else -%}
+          {%- elsif entry.type != "phdthesis" -%}
             {%- capture entrypages -%}.{%- endcapture -%}
           {%- endif -%}
           {%- if entry.month -%}
@@ -97,7 +96,6 @@
           {%- if entry.note -%}
             <div class="bibnote">{{entry.note}}.</div>
           {%- endif -%}
-        {%- endif %}
         
           <!-- Links/Buttons -->
           <div class="links">
@@ -164,37 +162,28 @@
 
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
+
+          <!-- Create clean bib entry -->
+          {% assign finalbibentry = '' %}
+          {%- capture curbibentry -%}{{entry.bibtex}}{%- endcapture -%}
+
+          {% assign curbibentry = {{entry.bibtex}} | newline_to_br | split: '<br />' %}
+          {% for line in curbibentry %}
+            {% if line contains 'bibtex_show =' 
+               or line contains 'pdf =' 
+               or line contains 'poster ='
+               or line contains 'arxiv ='
+               or line contains 'html ='
+               or line contains 'abstract ='
+               or line contains 'note ='
+               or line contains 'data ='
+               or line contains 'code =' %}
+            {% else %}
+              {% assign finalbibentry = {{finalbibentry}} | append: {{line}} %}
+            {% endif %}
+          {% endfor %}
           <div class="bibtex hidden">
-            <!--{% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}-->
-{% highlight bibtex %}
-@{{ entry.type }}
-{%- raw -%}{{% endraw %}{{entry.key}},
-  author =       "{{ entry.author }}",
-  title =        "{{ entry.title }}",
-  {%- if entry.booktitle %}
-  booktitle =    "{{ entry.booktitle }}",
-  {%- endif %}
-  {%- if entry.journal %}
-  journal =      "{{ entry.journal }}",
-  {%- endif %}
-  {%- if entry.volume %}
-  volume =       "{{ entry.volume }}",
-  {%- endif %}
-  {%- if entry.number %}
-  number =       "{{ entry.number }}",
-  {%- endif %}
-  {%- if entry.editor %}
-  editor =       "{{ entry.editor }}",
-  {%- endif %}
-  {%- if entry.pages %}
-  pages =        "{{ entry.pages }}",
-  {%- endif %}
-  {%- if entry.publisher %}
-  publisher =    "{{ entry.publisher }}",
-  {%- endif %}
-  year =         "{{ entry.year }}"
-{% raw %}}{% endraw %}
-{% endhighlight %}
+            {% highlight bibtex %}{{ finalbibentry }}{% endhighlight %}
           </div>
           {%- endif %}
         </div>
