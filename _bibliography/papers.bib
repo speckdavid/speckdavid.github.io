@@ -17,7 +17,7 @@
   html =         "https://freidok.uni-freiburg.de/data/225448",
   author =       "David Speck",
   title =        "Symbolic Search for Optimal Planning with Expressive Extensions",
-  school =       "University of Freiburg",
+  school =       "University of Freiburg, Germany",
   year =         "2022",
   abstract =     "<p>In classical planning, the goal is to derive a course of 
                   actions that allows an intelligent agent to move from any 
@@ -35,9 +35,30 @@
                   possible to model the problems without these extensions, it 
                   often leads to increased effort in modeling or makes modeling 
                   practically impossible as the required problem encoding size 
-                  increases exponentially</p>.
-
-"
+                  increases exponentially.</p>
+                  
+                  <p>In this thesis, we propose to use symbolic search for 
+                  cost-optimal planning for different expressive extensions of 
+                  classical planning, all capturing different aspects of the 
+                  problem. In particular, we study planning with axioms, 
+                  planning with state- dependent action costs, oversubscription 
+                  planning, and top-k planning. For all formalisms, we present 
+                  complexity and compilability results, highlighting that it is 
+                  desirable and even necessary to natively support the 
+                  corresponding features. We analyze symbolic heuristic search 
+                  and show that the search performance does not always benefit 
+                  from the use of a heuristic and that the search performance 
+                  can exponentially deteriorate even under the best possible 
+                  circumstances, namely the perfect heuristic. This reinforces 
+                  that symbolic blind search is the dominant symbolic search 
+                  strategy nowadays, on par with other state-of-the-art 
+                  cost-optimal planning strategies. Based on this observation 
+                  and the lack of good heuristics for planning formalisms with 
+                  expressive extensions, symbolic search turns out to be a 
+                  strong approach. We introduce symbolic search to support each 
+                  of the formalisms individually and in combination, resulting 
+                  in optimal, sound, and complete planning algorithms that 
+                  empirically compare favorably with other approaches.</p>"
 }
 
 @InProceedings{speck-et-al-icaps2021a,
@@ -453,4 +474,85 @@
                   concept of bioinspired sustainability and the presentation of 
                   an evaluation tree for Bioinspired Sustainability Assessment 
                   (BiSA)."
+}
+
+@InProceedings{speck-et-al-icaps2018,
+  bibtex_show =  "true",
+  pdf =          "speck-etal-icaps2018.pdf",
+  poster =       "speck-etal-icaps2018-poster.pdf",
+  code =         "https://gkigit.informatik.uni-freiburg.de/dspeck/symple",
+  supp =         "speck-etal-tr-2018.pdf",
+  title =        "Symbolic Planning with Edge-Valued Multi-Valued Decision Diagrams",
+  author =       "David Speck and Florian Gei{\ss}er and Robert Mattm{\"u}ller",
+  editor =       "Mathijs de Weerdt and Sven Koenig and Gabriele R{\"o}ger and Matthijs Spaan",
+  booktitle =    "Proceedings of the Twenty-Eighth International Conference on Automated Planning and Scheduling (ICAPS 2018)",
+  year =         "2018",
+  publisher =    "AAAI Press",
+  abstract =     "<p>Symbolic representations have attracted significant 
+                  attention in optimal planning. Binary Decision Diagrams (BDDs) 
+                  form the basis for symbolic search algorithms. Closely related 
+                  are Algebraic Decision Diagrams (ADDs), used to represent 
+                  heuristic functions. Also, progress was made in dealing with 
+                  models that take state-dependent action costs into account. 
+                  Here, costs are represented as Edge-valued Multi-valued 
+                  Decision Diagrams (EVMDDs), which can be exponentially more 
+                  compact than the corresponding ADD representation. However, 
+                  they were not yet considered for symbolic planning.</p>
+
+                  <p>In this work, we study EVMDD-based symbolic search for 
+                  optimal planning. We define EVMDD-based representations of 
+                  state sets and transition relations, and show how to compute 
+                  the necessary operations required for EVMDD-A*. This 
+                  EVMDD-based version of symbolic A* generalizes its BDD 
+                  variant, and allows to solve planning tasks with 
+                  state-dependent action costs. We prove theoretically that our 
+                  approach is sound, complete and optimal. Additionally, we 
+                  present an empirical analysis comparing EVMDD-A* to BDD-A* and 
+                  explicit A* search. Our results underscore the usefulness of 
+                  symbolic approaches and the feasibility of dealing with models 
+                  that go beyond unit costs.</p>"
+}
+
+@InProceedings{geisser-speck-ippc2018,
+  bibtex_show =  "true",
+  pdf =          "geisser-speck-ippc2018.pdf",
+  code =         "https://bitbucket.org/ipc2018-probabilistic/prost-dd-2/src/ipc2018-disc-mdp/",
+  author =       "Florian Gei{\ss}er and David Speck",
+  title =        "{Prost-DD} -- Utilizing Symbolic Classical Planning in {THTS}",
+  booktitle =    "Sixth International Probabilistic Planning Competition ({IPPC}-6): Planner Abstracts",
+  year =         "2018",
+  pages =        "13--16",
+  abstract =     "We describe PROST-DD, our submission to the International 
+                  Probabilistic Planning Competition 2018. Like its predecessor 
+                  PROST, which already participated with success at the previous 
+                  IPPC, PROST-DD is based on the trial-based heuristic tree 
+                  search framework and applies the UCT* algorithm. The novelty 
+                  of our submission is the heuristic used to initialize newly 
+                  encountered decision nodes. We apply an iterative symbolic 
+                  backward planning approach based on the determinized task. 
+                  Similarly to the SPUDD approach and recent work in symbolic 
+                  planning with state-dependent action costs, we encode costs 
+                  and reachability of states in a single decision diagram. 
+                  During initialization, these diagrams are then used to query 
+                  a state for its estimated expected reward. One benefit of this 
+                  heuristic is that we can optionally interweave the standard 
+                  heuristic of PROST, the IDS heuristic."
+}
+
+@InProceedings{speck-et-al-ipc2018,
+  bibtex_show =  "true",
+  pdf =          "speck-etal-ipc2018.pdf",
+  code =         "https://bitbucket.org/ipc2018-classical/team3/src/ipc-2018-seq-opt/",
+  title =        "{SYMPLE}: {S}ymbolic Planning based on {EVMDD}s",
+  author =       "David Speck and Florian Gei{\ss}er and Robert Mattm{\"u}ller",
+  booktitle =    "Ninth International Planning Competition ({IPC}-9): Planner Abstracts",
+  year =         "2018",
+  pages =        "82--85",
+  abstract =     "SYMPLE is a classical planner which performs bidirectional 
+                  symbolic search. Symbolic search has proven to be a useful 
+                  approach to optimal classical planning and is usually based 
+                  on Binary Decision Diagrams (BDDs). Our approach is based on 
+                  an alternative data structure called Edge-valued Multi-valued 
+                  Decision Diagrams (EVMDDs), which have some structural 
+                  advantages over BDDs."
 }
