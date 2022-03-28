@@ -23,4 +23,4 @@ My primary research interest is in the field of artificial intelligence, with a 
 <!--<h3>Short Bio</h3>-->
 I completed my bachelor's degree in 2015 and my master's degree in 2018 in computer science at the <a href='https://uni-freiburg.de/?set_language=en'>University of Freiburg</a>. 
 From April 2018, I have been a scientific employee and PhD student at the University of Freiburg at the <a href="https://gki.informatik.uni-freiburg.de/">Chair of Foundations of Artificial Intelligence</a> of <a href="https://gki.informatik.uni-freiburg.de/~nebel/">Prof. Dr. Bernhard Nebel</a>.
-In February 2022, I have received my PhD with the thesis <a href="https://freidok.uni-freiburg.de/data/225448">Symbolic Search for Optimal Planning with Expressive Extensions</a>.
+In February 2022, I have received my PhD with the thesis <a href="assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a>.
