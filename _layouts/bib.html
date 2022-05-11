@@ -84,6 +84,7 @@
           {%- capture entrypages -%}{%- endcapture -%}
           {%- capture entrymonth -%}{%- endcapture -%}
           {%- capture entryyear -%}{%- endcapture -%}
+          {%- capture pubstate -%}{%- endcapture -%}
           {% if entry.type == "article" -%}
             {%- capture entryvolume -%}{%- endcapture -%}
             {% if entry.volume %}
@@ -110,8 +111,11 @@
           {%- if entry.year -%}
             {%- capture entryyear -%}{{ " " }}{{entry.year}}.{%- endcapture -%}
           {%- endif -%}
+          {%- if entry.pubstate -%}
+            {%- capture pubstate -%}{{ " " }}{{entry.pubstate}}.{%- endcapture -%}
+          {%- endif -%}
           {% if entry.type != "patent" %}
-            {%- capture periodical -%}{{ entrytype }}{{ entrypages }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+            {%- capture periodical -%}{{ entrytype }}{{ entrypages }}{{ entrymonth }}{{ entryyear }}{{ pubstate }}{%- endcapture -%}
             <div class="periodical">
               {{ periodical | strip }}
             </div>
@@ -202,7 +206,8 @@
                or line contains 'data ='
                or line contains 'supp ='
                or line contains 'code ='
-               or line contains 'country =' %}
+               or line contains 'country ='
+               or line contains 'pubstate =' %}
             {% else %}
               {% assign finalbibentry = {{finalbibentry}} | append: {{line}} %}
             {% endif %}
