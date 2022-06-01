@@ -3,13 +3,26 @@
 
 @InProceedings{hu-speck-socs2022,
   bibtex_show =  "true",
+  pdf =          "hu-speck-socs2022.pdf",
+  code =         "https://doi.org/10.5281/zenodo.6570805",
+  data =         "https://doi.org/10.5281/zenodo.6570805",
   author =       "Kilian Hu and David Speck",
   title =        "On Bidirectional Heuristic Search in Classical Planning: An Analysis of BAE*",
   editor =       "Luk{\'a}{\v{s}} Chrpa and Alessandro Saetti",
   booktitle =    "Proceedings of the 15th Annual Symposium on Combinatorial Search (SoCS 2022)",
   year =         "2022",
   publisher =    "AAAI Press",
-  pubstate =     "Accepted"
+  abstract =     "<p>Heuristic search is a successful approach to cost-optimal planning. 
+                  Bidirectional heuristic search algorithms have been around for a long time, 
+                  but only recent advances have led to algorithms like BAE* that have the potential to 
+                  outperform unidirectional heuristic search algorithms like A* in practice. In this work, 
+                  we analyze BAE* for classical planning and the challenges associated with the underlying 
+                  assumption of an explicit state representation. We show that it is crucial to use mutexes 
+                  and reachability analysis to reduce the potentially exponential number of goal states, 
+                  which makes it possible to create an explicit representation of a reversed planning 
+                  task that can be used for the backward search of BAE*. Our empirical evaluation shows 
+                  that BAE* solves more instances than A* in multiple domains with significantly fewer 
+                  node expansions, demonstrating the usefulness of BAE* in planning.</p>"
 }
 
 @InProceedings{biedenkapp-et-al-icaps2022wsprl,
@@ -32,7 +45,7 @@
   booktitle =    "Proceedings of the Thirty-Second International Conference on Automated Planning and Scheduling (ICAPS 2022)",
   year =         "2022",
   publisher =    "AAAI Press",
-  abstract =     "Cartesian counterexample-guided abstraction refinement (CEGAR) 
+  abstract =     "<p>Cartesian counterexample-guided abstraction refinement (CEGAR) 
                   yields strong heuristics for optimal classical planning. 
                   CEGAR repeatedly finds counterexamples, i.e., abstract plans 
                   that fail for the concrete task. Although there are usually 
@@ -46,7 +59,7 @@
                   a concrete solution. The resulting algorithm solves more tasks 
                   than the previous state of the art for Cartesian CEGAR, both 
                   during refinement and when used as a heuristic in an A* 
-                  search.",
+                  search.</p>",
   pubstate =     "In press"
 }
 
