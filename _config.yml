@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: David
 middle_name: 
 last_name: Speck
-email: speckd@informatik.uni-freiburg.de
+email: david.speck@liu.se
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic website of David Speck.
 footer_text: >
@@ -63,7 +63,7 @@ quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
-work_url: https://gki.informatik.uni-freiburg.de/~speckd/
+work_url: https://rlplab.com/david-speck/
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: https://dblp.uni-trier.de/pid/168/7342-1.html # your DBLP profile url
