@@ -5,9 +5,9 @@ title: Awards
 description:
 nav: true
 ---
-<!-- _pages/patents.md -->
+
 <div class="publications">
-  <h2 class="year">2021</h2>
+<h2 class="year">2021</h2>
   <ol class="bibliography">
     <li>
       <div class="row">
@@ -22,7 +22,9 @@ nav: true
       </div>
     </li>
   </ol>
-  
+</div>
+
+<div class="publications">
   <h2 class="year">2018</h2>
   <ol class="bibliography">
     <li>
@@ -37,3 +39,26 @@ nav: true
         </div>
       </div>
     </li>
+  </ol>
+</div>
+
+<br>
+# Scholarship
+
+<div class="publications">
+  <h2 class="year">2015</h2>
+  <ol class="bibliography">
+    <li>
+      <div class="row">
+        <div class="col-sm-2 abbr">
+        </div>
+        <div class="col-sm-10">
+          <div class="author">
+          Christoph-Rüchardt Scholarship (1 year duration)  
+          </div>
+          Granted by the <a href="https://www.tf.uni-freiburg.de/en">Faculty of Engineering</a> (<a href="https://uni-freiburg.de/en/">University of Freiburg</a>) for outstanding master’s students who have demonstrated exceptional academic merit in their undergraduate studies.
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
