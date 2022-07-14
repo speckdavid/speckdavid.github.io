@@ -7,6 +7,25 @@ nav: true
 ---
 
 <div class="publications">
+<h2 class="year">2022</h2>
+  <ol class="bibliography">
+    <li>
+      <div class="row">
+        <div class="col-sm-2 abbr">
+        </div>
+        <div class="col-sm-10">
+          <div class="author">
+          Remo Christen, Salomé Eriksson, Michael Katz, Emil Keyder, Christian Muise, Alice Petrov, 
+          Florian Pommerening, Jendrik Seipp, Silvan Sievers and <em>David Speck</em>
+          </div>
+          won four tracks of the 1st Combinatorial Reconfiguration Challenge (<a href="https://core-challenge.github.io/2022/#home">CoRe Challenge 2022</a>) with the <a href="../assets/pdf/christen-etal-core2022.pdf">PARIS</a> solver they developed.
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+
+<div class="publications">
 <h2 class="year">2021</h2>
   <ol class="bibliography">
     <li>
