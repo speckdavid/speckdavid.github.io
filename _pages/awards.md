@@ -15,6 +15,24 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
+            <em>David Speck</em>
+          </div>
+          received the <em><a href="https://uni-freiburg.de/zuv/service/ehrungen-und-preise/freiburger-nachwuchsfoerderpreise/technische-fakultaet/">Wolfgang-Gentner-Award for Young Researchers</a></em> for his dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a> from the the Faculty of Engineering at the University of Freiburg.
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+
+<div class="publications">
+<h2 class="year">2022</h2>
+  <ol class="bibliography">
+    <li>
+      <div class="row">
+        <div class="col-sm-2 abbr">
+        </div>
+        <div class="col-sm-10">
+          <div class="author">
           Remo Christen, Salomé Eriksson, Michael Katz, Emil Keyder, Christian Muise, Alice Petrov, 
           Florian Pommerening, Jendrik Seipp, Silvan Sievers and <em>David Speck</em>
           </div>
