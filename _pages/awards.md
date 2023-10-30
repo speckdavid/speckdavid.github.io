@@ -17,7 +17,7 @@ nav: true
           <div class="author">
           Remo Christen, Salomé Eriksson, Michael Katz, Christian Muise, Florian Pommerening, Jendrik Seipp, Silvan Sievers and <em>David Speck</em>
           </div>
-          achieved 4x first place and 2x second place at the 2nd Combinatorial Reconfiguration Challenge (<a href="https://core-challenge.github.io/2023/">CoRe Challenge 2022</a>) with the <a href="../assets/pdf/christen-et-al-ecai2023.pdf">PARIS 2023</a> solver they developed.
+          achieved 4x first place and 2x second place at the 2nd Combinatorial Reconfiguration Challenge (<a href="https://core-challenge.github.io/2023/">CoRe Challenge 2023</a>) with the <a href="../assets/pdf/christen-et-al-ecai2023.pdf">PARIS 2023</a> solver they developed.
         </div>
       </div>
     </li>
