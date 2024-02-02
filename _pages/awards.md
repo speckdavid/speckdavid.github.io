@@ -23,7 +23,6 @@ nav: true
     </li>
   </ol>
 
-
   <ol class="bibliography">
     <li>
       <div class="row">
