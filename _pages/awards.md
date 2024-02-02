@@ -37,7 +37,6 @@ nav: true
       </div>
     </li>
   </ol>
-  <br>
 
   <ol class="bibliography">
     <li>
@@ -71,7 +70,6 @@ nav: true
       </div>
     </li>
   </ol>
-  <br>
 
   <ol class="bibliography">
     <li>
