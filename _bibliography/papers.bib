@@ -90,7 +90,13 @@
   booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
                   Planner Abstracts",
   year =         "2023",
-  abstract =     "<p></p>"
+  abstract =     "<p>Ragnarok is a sequential portfolio planner that uses several classical planners developed by members of the 
+                  Representation, Learning and Planning Lab at Link{\"o}ping University in Sweden. Much like the Norse saga Ragnar{\"o}k, 
+                  from whom our portfolio planner takes its name, our component planners battled each other in a training phase, from which 
+                  we obtained the time slices for each component to create a portfolio that combines their individual strengths. This portfolio 
+                  participated in and won the Optimal Track of the International Planning Competition 2023. The Ragnarok source code is 
+                  published online and we recommend to use the latest version with some post-competition fixes, available at 
+                  https://github.com/ipc2023-classical/planner17/tree/latest.</p>"
 }
 
 @InProceedings{drexler-et-al-ipc2023b,
@@ -102,7 +108,10 @@
   booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
                   Planner Abstracts",
   year =         "2023",
-  abstract =     "<p></p>"
+  abstract =     "<p>This planner abstract describes an optimal classical planner called Odin. Odin uses A* search 
+                  (Hart, Nilsson, and Raphael 1968) with an admissible heuristic (Pearl 1984) based on abstraction heuristics and saturated 
+                  transition cost partitioning (Keller et al. 2016) to find optimal plans. Odin's main strength is in tasks where 
+                  optimal plans contain the same actions multiple times, which is often the case in transportation domains.</p>"
 }
 
 @InProceedings{speck-ipc2023,
@@ -114,7 +123,10 @@
   booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
                   Planner Abstracts",
   year =         "2023",
-  abstract =     "<p></p>"
+  abstract =     "<p>SymK is a planner that performs symbolic search using Binary Decision Diagrams to find a single optimal or the best 
+                 k plans. It is designed to be a versatile planner by supporting several important and expressive extensions to the classical 
+                 planning formalism. Our planner, SymK, therefore natively supports features relevant for compact modeling of planning tasks, 
+                 such as conditional effects and derived predicates with axioms.</p>"
 }
 
 @InProceedings{hoeft-et-al-ipc2023,
@@ -126,7 +138,12 @@
   booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
                   Planner Abstracts",
   year =         "2023",
-  abstract =     "<p></p>"
+  abstract =     "<p>Cost partitioning is the foundation of today’s strongest heuristics for optimal classical planning. Many cost partitioning 
+                  algorithms use linear programs (LPs) to compute the heuristic value. In practice, it is often too time-consuming to solve a 
+                  separate LP for each state, so it is necessary to approximate the heuristic. Our planner, Dofri, uses a refined version of the 
+                  Saturated Post-hoc Optimization heuristic that reduces the computational cost without approximating the heuristic. This is done 
+                  by simplifying the LPs and avoiding duplicate computations so that we can precisely compute the heuristics for each state without 
+                  sacrificing heuristic quality.</p>"
 }
 
 @InProceedings{hu-speck-socs2022,
