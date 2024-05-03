@@ -17,7 +17,7 @@ nav: true
           <div class="author">
           <em>David Speck</em>
           </div>
-          has won the ICAPS Best Dissertation Award at the Thirty-Fourth International Conference on Automated Planning and Scheduling (<a href="https://icaps24.icaps-conference.org/program/awards/">ICAPS 2024</a>) for his dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a>.
+          has won the <a href="https://www.icaps-conference.org/icaps-awards/">ICAPS Best Dissertation Award</a> at the Thirty-Fourth International Conference on Automated Planning and Scheduling (ICAPS 2024) for his dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a>.
         </div>
       </div>
     </li>
