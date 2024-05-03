@@ -15,6 +15,20 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
+          <em>David Speck</em>
+          </div>
+          has won the ICAPS Best Dissertation Award at the Thirty-Fourth International Conference on Automated Planning and Scheduling (<a href="https://icaps24.icaps-conference.org/program/awards/">ICAPS 2024</a>) for his dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a>.
+        </div>
+      </div>
+    </li>
+  </ol>
+  <ol class="bibliography">
+    <li>
+      <div class="row">
+        <div class="col-sm-2 abbr">
+        </div>
+        <div class="col-sm-10">
+          <div class="author">
             <em>David Speck</em> and Daniel Gnad
           </div>
           received the Best Paper Award for the paper <a href="../assets/pdf/speck-gnad2024.pdf">Decoupled Search for the Masses: A Novel Task Transformation for Classical Planning</a> at the the Thirty-Fourth International Conference on Automated Planning and Scheduling (<a href="https://icaps24.icaps-conference.org/program/awards/">ICAPS 2024</a>).
