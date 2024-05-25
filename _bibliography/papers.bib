@@ -29,6 +29,16 @@
   abstract =     "<p>Saturated post-hoc optimization is a powerful method for computing admissible heuristics for optimal classical planning. The approach solves a linear program (LP) for each state encountered during the search, which is computationally demanding. In this paper, we theoretically and empirically analyze to which extent we can reuse an LP solution of one state for another. We introduce a novel sensitivity analysis that can exactly characterize the set of states for which a unique LP solution is optimal. Furthermore, we identify two properties of the underlying LPs that affect reusability. Finally, we introduce an algorithm that optimizes LP solutions to generalize well to other states. Our new algorithms significantly reduce the number of necessary LP computations.</p>"  
 }
 
+@InProceedings{gnad-speck-icaps2024wsweep,
+  bibtex_show =  "true",
+  pdf =          "gnad-speck-icaps2024wsweep.pdf",
+  author =       "Daniel Gnad and David Speck",
+  title =        "On an Attempt at Casting Orbit Search as a Task Transformation",
+  booktitle =    "ICAPS 2024 Workshop on Echoing (failed) Efforts in Planning (WEEP)",
+  year =         "2024",
+  abstract =     "<p>State-space reduction techniques are a powerful means to enhancing the performance of search-based planners. Recent work has shown that decoupled search, which compactly represents sets of states, can be cast as a task reformulation. Concretely, it is possible to exactly simulate the behavior and reduction of (non-optimal) decoupled search by applying a transformation to the input task and running regular search on the transformed task. In this work, we investigate if the same approach is feasible for symmetry breaking, in particular orbit space search (OSS). One of the challenges in this endeavor is that OSS dynamically computes a canonical representative of every state generated during search. To represent this computation as a task transformation, however, we need to fix the procedure at transformation time. This leads to reduced pruning potential, which we discuss in detail and verify empirically. We also discuss an approach that can fully simulate OSS, at the cost of vastly blowing-up the task size.</p>"
+}
+
 @InProceedings{hoeft-et-al-ecai2023,
   bibtex_show =  "true",
   pdf =          "hoeft-et-al-ecai2023.pdf",
@@ -321,7 +331,7 @@
                   cost-optimal planning for different expressive extensions of 
                   classical planning, all capturing different aspects of the 
                   problem. In particular, we study planning with axioms, 
-                  planning with state- dependent action costs, oversubscription 
+                  planning with state-dependent action costs, oversubscription 
                   planning, and top-k planning. For all formalisms, we present 
                   complexity and compilability results, highlighting that it is 
                   desirable and even necessary to natively support the 
@@ -780,7 +790,7 @@
   code =         "https://github.com/speckdavid/shakey2016",
   html =         "https://ieeexplore.ieee.org/document/7847341",
   author =       "David Speck and Christian Dornhege and Wolfram Burgard",
-  title =        "Shakey 2016 - How Much Does it Take to Redo Shakey the Robot?",
+  title =        "Shakey 2016 -- How Much Does it Take to Redo Shakey the Robot?",
   journal =      "IEEE Robotics and Automation Letters (RA-L)",
   year =         "2017",
   volume =       "2",
