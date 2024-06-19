@@ -29,16 +29,6 @@
   abstract =     "<p>Saturated post-hoc optimization is a powerful method for computing admissible heuristics for optimal classical planning. The approach solves a linear program (LP) for each state encountered during the search, which is computationally demanding. In this paper, we theoretically and empirically analyze to which extent we can reuse an LP solution of one state for another. We introduce a novel sensitivity analysis that can exactly characterize the set of states for which a unique LP solution is optimal. Furthermore, we identify two properties of the underlying LPs that affect reusability. Finally, we introduce an algorithm that optimizes LP solutions to generalize well to other states. Our new algorithms significantly reduce the number of necessary LP computations.</p>"  
 }
 
-@InProceedings{gnad-speck-icaps2024wsweep,
-  bibtex_show =  "true",
-  pdf =          "gnad-speck-icaps2024wsweep.pdf",
-  author =       "Daniel Gnad and David Speck",
-  title =        "On an Attempt at Casting Orbit Search as a Task Transformation",
-  booktitle =    "ICAPS 2024 Workshop on Echoing (failed) Efforts in Planning (WEEP)",
-  year =         "2024",
-  abstract =     "<p>State-space reduction techniques are a powerful means to enhancing the performance of search-based planners. Recent work has shown that decoupled search, which compactly represents sets of states, can be cast as a task reformulation. Concretely, it is possible to exactly simulate the behavior and reduction of (non-optimal) decoupled search by applying a transformation to the input task and running regular search on the transformed task. In this work, we investigate if the same approach is feasible for symmetry breaking, in particular orbit space search (OSS). One of the challenges in this endeavor is that OSS dynamically computes a canonical representative of every state generated during search. To represent this computation as a task transformation, however, we need to fix the procedure at transformation time. This leads to reduced pruning potential, which we discuss in detail and verify empirically. We also discuss an approach that can fully simulate OSS, at the cost of vastly blowing-up the task size.</p>"
-}
-
 @InProceedings{hoeft-et-al-ecai2023,
   bibtex_show =  "true",
   pdf =          "hoeft-et-al-ecai2023.pdf",
@@ -119,71 +109,6 @@
                   hierarchical OSP problems and investigate their empirical behaviour on our proposed benchmark.</p>"
 }
 
-@InProceedings{drexler-et-al-ipc2023a,
-  bibtex_show =  "true",
-  title =        "Ragnarok",
-  pdf =          "drexler-et-al-ipc2023a.pdf",
-  code =         "https://github.com/ipc2023-classical/planner17",
-  author =       "Dominik Drexler and Daniel Gnad and Paul H{\"o}ft and Jendrik Seipp and David Speck and Simon St{\aa}hlberg",
-  booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
-                  Planner Abstracts",
-  year =         "2023",
-  abstract =     "<p>Ragnarok is a sequential portfolio planner that uses several classical planners developed by members of the 
-                  Representation, Learning and Planning Lab at Link{\"o}ping University in Sweden. Much like the Norse saga Ragnar{\"o}k, 
-                  from whom our portfolio planner takes its name, our component planners battled each other in a training phase, from which 
-                  we obtained the time slices for each component to create a portfolio that combines their individual strengths. This portfolio 
-                  participated in and won the Optimal Track of the International Planning Competition 2023. The Ragnarok source code is 
-                  published online and we recommend to use the latest version with some post-competition fixes, available at 
-                  https://github.com/ipc2023-classical/planner17/tree/latest.</p>"
-}
-
-@InProceedings{drexler-et-al-ipc2023b,
-  bibtex_show =  "true",
-  pdf =          "drexler-et-al-ipc2023b.pdf",
-  code =         "https://github.com/ipc2023-classical/planner2",
-  title =        "Odin: A Planner Based on Saturated Transition Cost Partitioning",
-  author =       "Dominik Drexler and Jendrik Seipp and David Speck",
-  booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
-                  Planner Abstracts",
-  year =         "2023",
-  abstract =     "<p>This planner abstract describes an optimal classical planner called Odin. Odin uses A* search 
-                  (Hart, Nilsson, and Raphael 1968) with an admissible heuristic (Pearl 1984) based on abstraction heuristics and saturated 
-                  transition cost partitioning (Keller et al. 2016) to find optimal plans. Odin's main strength is in tasks where 
-                  optimal plans contain the same actions multiple times, which is often the case in transportation domains.</p>"
-}
-
-@InProceedings{speck-ipc2023,
-  bibtex_show =  "true",
-  pdf =          "speck-ipc2023.pdf",
-  code =         "https://github.com/ipc2023-classical/planner3",
-  title =        "{SymK} -- {A} Versatile Symbolic Search Planner",
-  author =       "David Speck",
-  booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
-                  Planner Abstracts",
-  year =         "2023",
-  abstract =     "<p>SymK is a planner that performs symbolic search using Binary Decision Diagrams to find a single optimal or the best 
-                 k plans. It is designed to be a versatile planner by supporting several important and expressive extensions to the classical 
-                 planning formalism. Our planner, SymK, therefore natively supports features relevant for compact modeling of planning tasks, 
-                 such as conditional effects and derived predicates with axioms.</p>"
-}
-
-@InProceedings{hoeft-et-al-ipc2023,
-  bibtex_show =  "true",
-  pdf =          "hoeft-et-al-ipc2023.pdf",
-  code =         "https://github.com/ipc2023-classical/planner21",
-  title =        "Dofri: Planner Abstract",
-  author =       "Paul H{\"o}ft and David Speck and Jendrik Seipp",
-  booktitle =    "Tenth {I}nternational {P}lanning {C}ompetition ({IPC}-10):
-                  Planner Abstracts",
-  year =         "2023",
-  abstract =     "<p>Cost partitioning is the foundation of today’s strongest heuristics for optimal classical planning. Many cost partitioning 
-                  algorithms use linear programs (LPs) to compute the heuristic value. In practice, it is often too time-consuming to solve a 
-                  separate LP for each state, so it is necessary to approximate the heuristic. Our planner, Dofri, uses a refined version of the 
-                  Saturated Post-hoc Optimization heuristic that reduces the computational cost without approximating the heuristic. This is done 
-                  by simplifying the LPs and avoiding duplicate computations so that we can precisely compute the heuristics for each state without 
-                  sacrificing heuristic quality.</p>"
-}
-
 @InProceedings{hu-speck-socs2022,
   bibtex_show =  "true",
   pdf =          "hu-speck-socs2022.pdf",
@@ -207,40 +132,6 @@
                   task that can be used for the backward search of BAE*. Our empirical evaluation shows 
                   that BAE* solves more instances than A* in multiple domains with significantly fewer 
                   node expansions, demonstrating the usefulness of BAE* in planning.</p>"
-}
-
-@InProceedings{christen-et-al-core2022,
-  bibtex_show =  "true",
-  pdf =          "christen-etal-core2022.pdf",
-  author =       "Remo Christen and Salom{\'e} Eriksson and Michael Katz and Emil Keyder and Christian Muise and Alice Petrov and Florian Pommerening and Jendrik Seipp and Silvan Sievers and David Speck",
-  title =        "({PARIS}) Planning Algorithms for Reconfiguring Independent Sets -- Solver Description",
-  year =         "2022",
-  editor =       "Takehide Soh and Yoshio Okamoto and Takehiro Ito",
-  booktitle =    "First {CoRe} Challenge: Solver and Graph Descriptions",
-  pages =        "15--22",
-  abstract =     "<p>The general approach to all of the solver tracks was to model the ISR 
-                  problem as one of automated planning, and use a selection of state-of-the-art 
-                  solvers to solve these instances. Throughout this document, we describe the 
-                  encoding, solvers, and overall search setup.</p>"
-}
-
-@InProceedings{biedenkapp-et-al-icaps2022wsprl,
-  bibtex_show =  "true",
-  pdf =          "biedenkapp-etal-prl2022.pdf",
-  title =        "Learning Domain-Independent Policies for Open List Selection",
-  author =       "Andr{\'e} Biedenkapp and David Speck and Silvan Sievers and Frank Hutter and Marius Lindauer and Jendrik Seipp",
-  booktitle =    "ICAPS 2022 Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)",
-  year =         "2022",
-  abstract =     "<p>Since its proposal over a decade ago, LAMA has been considered one of the best-performing 
-                  satisficing classical planners. Its key component is heuristic search with multiple open lists, 
-                  each using a different heuristic function to order states. Even with a very simple, ad-hoc policy 
-                  for open list selection, LAMA achieves state-of-the-art results. In this paper, we propose to use 
-                  dynamic algorithm configuration to learn such policies in a principled and data-driven manner. On 
-                  the learning side, we show how to train a reinforcement learning agent over several heterogeneous 
-                  environments, aiming at zero-shot generalization to new related domains. On the planning side, our 
-                  experimental results show that the trained policies often reach the performance of LAMA, and sometimes 
-                  even perform better. Furthermore, our analysis of different policies shows that prioritizing states 
-                  reached via preferred operators is crucial, explaining the strong performance of LAMA.</p>"
 }
 
 @InProceedings{speck-seipp-icaps2022,
@@ -298,57 +189,6 @@
                   k-coverage than a generate-and-test approach that uses an 
                   ordinary top-k planner, which we show to be incomplete in the 
                   presence of zero-cost loops.</p>"
-}
-
-@PhdThesis{speck-phd2022,
-  bibtex_show =  "true",
-  arxiv =        "2204.00288",
-  pdf =          "speck-phd2022.pdf",
-  html =         "https://freidok.uni-freiburg.de/data/225448",
-  author =       "David Speck",
-  title =        "Symbolic Search for Optimal Planning with Expressive Extensions",
-  school =       "University of Freiburg, Germany",
-  year =         "2022",
-  abstract =     "<p>In classical planning, the goal is to derive a course of 
-                  actions that allows an intelligent agent to move from any 
-                  situation it finds itself in to one that satisfies its goals. 
-                  Classical planning is considered domain-independent, i.e., it 
-                  is not limited to a particular application and can be used to 
-                  solve different types of reasoning problems. In practice, 
-                  however, some properties of a planning problem at hand require 
-                  an expressive extension of the standard classical planning 
-                  formalism to capture and model them. Although the importance 
-                  of many of these extensions is well known, most planners, 
-                  especially optimal planners, do not support these extended 
-                  planning formalisms. The lack of support not only limits the 
-                  use of these planners for certain problems, but even if it is 
-                  possible to model the problems without these extensions, it 
-                  often leads to increased effort in modeling or makes modeling 
-                  practically impossible as the required problem encoding size 
-                  increases exponentially.</p>
-                  
-                  <p>In this thesis, we propose to use symbolic search for 
-                  cost-optimal planning for different expressive extensions of 
-                  classical planning, all capturing different aspects of the 
-                  problem. In particular, we study planning with axioms, 
-                  planning with state-dependent action costs, oversubscription 
-                  planning, and top-k planning. For all formalisms, we present 
-                  complexity and compilability results, highlighting that it is 
-                  desirable and even necessary to natively support the 
-                  corresponding features. We analyze symbolic heuristic search 
-                  and show that the search performance does not always benefit 
-                  from the use of a heuristic and that the search performance 
-                  can exponentially deteriorate even under the best possible 
-                  circumstances, namely the perfect heuristic. This reinforces 
-                  that symbolic blind search is the dominant symbolic search 
-                  strategy nowadays, on par with other state-of-the-art 
-                  cost-optimal planning strategies. Based on this observation 
-                  and the lack of good heuristics for planning formalisms with 
-                  expressive extensions, symbolic search turns out to be a 
-                  strong approach. We introduce symbolic search to support each 
-                  of the formalisms individually and in combination, resulting 
-                  in optimal, sound, and complete planning algorithms that 
-                  empirically compare favorably with other approaches.</p>"
 }
 
 @InProceedings{speck-et-al-icaps2021a,
@@ -654,31 +494,6 @@
                   accuracy, node expansions, or overall runtime savings."
 }
 
-@InProceedings{geisser-et-al-icaps2019wsipc,
-  bibtex_show =  "true",
-  pdf =          "geisser-et-al-icaps2019wsipc.pdf",
-  code =         "http://doi.org/10.5281/zenodo.3235174",
-  data =         "http://doi.org/10.5281/zenodo.3235174",
-  title =        "An Analysis of the Probabilistic Track of the {IPC} 2018",
-  author =       "Florian Gei{\ss}er and David Speck and Thomas Keller",
-  booktitle =    "ICAPS 2019 Workshop on the International Planning Competition (WIPC)",
-  year =         "2019",
-  pages =        "27--35",
-  abstract =     "<p>The International Planning Competition 2018 consisted of 
-                  several tracks on classical, temporal and probabilistic 
-                  planning. In this paper, we focus on the discrete MDP track of 
-                  the probabilistic portion of the competition.</p>
-                  <p>We discuss the changes to the input language RDDL, which 
-                  give rise to new challenges for planning systems, and analyze 
-                  each of the eight competition domains separately and highlight 
-                  unique properties. We demonstrate flaws of the used evaluation 
-                  criterion, the IPC score, and discuss the need for optimal 
-                  upper bounds. An evaluation of the three top-performers, 
-                  including their post-competition versions, and a brief 
-                  analysis of their performance highlights the strengths and 
-                  weaknesses of the individual approaches.</p>"
-}
-
 @InProceedings{speck-et-al-bk2019,
   bibtex_show =  "true",
   html =         "http://www.gtbb.net/deutsch/NE_tagungsband.html",
@@ -738,50 +553,6 @@
                   explicit A* search. Our results underscore the usefulness of 
                   symbolic approaches and the feasibility of dealing with models 
                   that go beyond unit costs.</p>"
-}
-
-@InProceedings{geisser-speck-ippc2018,
-  bibtex_show =  "true",
-  pdf =          "geisser-speck-ippc2018.pdf",
-  code =         "https://bitbucket.org/ipc2018-probabilistic/prost-dd-2/src/ipc2018-disc-mdp/",
-  author =       "Florian Gei{\ss}er and David Speck",
-  title =        "{Prost-DD} -- Utilizing Symbolic Classical Planning in {THTS}",
-  booktitle =    "Sixth International Probabilistic Planning Competition ({IPPC}-6): Planner Abstracts",
-  year =         "2018",
-  pages =        "13--16",
-  abstract =     "We describe PROST-DD, our submission to the International 
-                  Probabilistic Planning Competition 2018. Like its predecessor 
-                  PROST, which already participated with success at the previous 
-                  IPPC, PROST-DD is based on the trial-based heuristic tree 
-                  search framework and applies the UCT* algorithm. The novelty 
-                  of our submission is the heuristic used to initialize newly 
-                  encountered decision nodes. We apply an iterative symbolic 
-                  backward planning approach based on the determinized task. 
-                  Similarly to the SPUDD approach and recent work in symbolic 
-                  planning with state-dependent action costs, we encode costs 
-                  and reachability of states in a single decision diagram. 
-                  During initialization, these diagrams are then used to query 
-                  a state for its estimated expected reward. One benefit of this 
-                  heuristic is that we can optionally interweave the standard 
-                  heuristic of PROST, the IDS heuristic."
-}
-
-@InProceedings{speck-et-al-ipc2018,
-  bibtex_show =  "true",
-  pdf =          "speck-etal-ipc2018.pdf",
-  code =         "https://bitbucket.org/ipc2018-classical/team3/src/ipc-2018-seq-opt/",
-  title =        "{SYMPLE}: {S}ymbolic Planning based on {EVMDD}s",
-  author =       "David Speck and Florian Gei{\ss}er and Robert Mattm{\"u}ller",
-  booktitle =    "Ninth International Planning Competition ({IPC}-9): Planner Abstracts",
-  year =         "2018",
-  pages =        "82--85",
-  abstract =     "SYMPLE is a classical planner which performs bidirectional 
-                  symbolic search. Symbolic search has proven to be a useful 
-                  approach to optimal classical planning and is usually based 
-                  on Binary Decision Diagrams (BDDs). Our approach is based on 
-                  an alternative data structure called Edge-valued Multi-valued 
-                  Decision Diagrams (EVMDDs), which have some structural 
-                  advantages over BDDs."
 }
 
 @Article{speck-et-al-ral2017,

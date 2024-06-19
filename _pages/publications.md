@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description:
-years: [2024,2023,2022,2021,2020,2019,2018,2017,2015]
+years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2015]
 nav: true
 ---
 <!-- _pages/publications.md -->
@@ -12,55 +12,87 @@ nav: true
 
 <div class="toggle-container">
   <label class="switch">
-    <input type="checkbox" id="toggle">
+    <input type="checkbox" id="conference-toggle" checked>
     <span class="slider"></span>
   </label>
-  <span class="toggle-label">Superseded papers</span>
+  <span class="toggle-label">Conference publications</span>
+</div>
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" id="journal-toggle" checked>
+    <span class="slider"></span>
+  </label>
+  <span class="toggle-label">Journal publications</span>
+</div>
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" id="workshop-toggle" checked>
+    <span class="slider"></span>
+  </label>
+  <span class="toggle-label">Workshop publications</span>
+</div>
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" id="other-toggle" checked>
+    <span class="slider"></span>
+  </label>
+  <span class="toggle-label">Other publications</span>
+</div>
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" id="superseded-toggle">
+    <span class="slider"></span>
+  </label>
+  <span class="toggle-label">Superseded publications</span>
 </div>
 
-<div id="content-off">
-  {%- for y in page.years %}
-    <h2 class="year">{{y}}</h2>
-    {% bibliography -f papers -q @*[year={{y}}]* %}
-  {% endfor %}
-</div>
-
-<div id="content-on" style="display: none;">
-  {%- for y in page.years %}
-    <h2 class="year">{{y}}</h2>
-    {% bibliography -f papers -q @*[year={{y}}]* %}
-    {% bibliography -f papers_superseded -q @*[year={{y}}]* %}
-  {% endfor %}
-</div>
+{%- for y in page.years %}
+  <h2 class="year">{{ y }}</h2>
+  <div class="conference-on" style="display: none;">
+    {% bibliography -f papers_conference -q @*[year={{ y }}]* %}
+  </div>
+    <div class="journal-on" style="display: none;">
+    {% bibliography -f papers_journal -q @*[year={{ y }}]* %}
+  </div>
+  <div class="workshop-on" style="display: none;">
+    {% bibliography -f papers_workshop -q @*[year={{ y }}]* %}
+  </div>
+  <div class="other-on" style="display: none;">
+    {% bibliography -f papers_other -q @*[year={{ y }}]* %}
+  </div>
+  <div class="superseded-on" style="display: none;">
+    {% bibliography -f papers_superseded -q @*[year={{ y }}]* %}
+  </div>
+{% endfor %}
 
 <script>
-  // Initialize the toggle state when the page loads or is navigated to
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("toggle");
-    const contentOn = document.getElementById("content-on");
-    const contentOff = document.getElementById("content-off");
+  function initializeToggle(toggleId, contentOnClass) {
+    const toggle = document.getElementById(toggleId);
+    const contentOnElements = document.querySelectorAll("." + contentOnClass);
 
-    // Retrieve toggle state from local storage
-    const storedToggleState = localStorage.getItem("toggleState");
-
-    // Set initial toggle state based on stored value or default
-    toggle.checked = storedToggleState === "on";
-    contentOn.style.display = toggle.checked ? "block" : "none";
-    contentOff.style.display = toggle.checked ? "none" : "block";
+    // Set initial display state based on the toggle's checked state
+    contentOnElements.forEach(el => el.style.display = toggle.checked ? "block" : "none");
 
     // Add event listener to handle toggle change
     toggle.addEventListener("change", () => {
-      if (toggle.checked) {
-        contentOn.style.display = "block";
-        contentOff.style.display = "none";
-      } else {
-        contentOn.style.display = "none";
-        contentOff.style.display = "block";
-      }
-
-      // Store toggle state in local storage
-      localStorage.setItem("toggleState", toggle.checked ? "on" : "off");
+      contentOnElements.forEach(el => el.style.display = toggle.checked ? "block" : "none");
     });
+  }
+
+  function initializeAllToggles() {
+    initializeToggle("conference-toggle", "conference-on");
+    initializeToggle("journal-toggle", "journal-on");
+    initializeToggle("workshop-toggle", "workshop-on");
+    initializeToggle("other-toggle", "other-on");
+    initializeToggle("superseded-toggle", "superseded-on");
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    initializeAllToggles()
+  });
+
+  window.addEventListener("pageshow", function () {
+    initializeAllToggles()
   });
 </script>
 
