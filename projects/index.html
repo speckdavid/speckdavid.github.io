@@ -9,10 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>David  Speck | blog</title>
+    <title>David  Speck | Projects</title>
     <meta name="author" content="David  Speck" />
-    <meta name="description" content="Academic website of David Speck.
-" />
+    <meta name="description" content="A list of projects where I have been a principal investigator to acquire the project and funding." />
     <meta name="keywords" content="ai-planning, planning, academic-website" />
 
 
@@ -33,7 +32,7 @@
     <link rel="shortcut icon" href="/assets/img/prof_pic.jpg"/>
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://speckdavid.github.io/blog/">
+    <link rel="canonical" href="https://speckdavid.github.io/projects/">
     
     <!-- Dark Mode -->
     
@@ -79,16 +78,16 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/patents/">Patents</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/projects/">Projects</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/projects/">Projects<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/publications/">Publications</a>
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -101,21 +100,52 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">Projects</h1>
+            <p class="post-description">A list of projects where I have been a principal investigator to acquire the project and funding.</p>
+          </header>
 
+          <article>
+            <!-- pages/projects.md -->
+<div class="projects">
+<!-- Display projects without categories --><!-- Generate cards for each project -->
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/aiplan4eu/">
+      <div class="card hoverable">
+<figure>
 
-  <ul class="post-list">
-    
-  </ul>
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/aiplan4eu-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/aiplan4eu-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/aiplan4eu-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/aiplan4eu.png" alt="project thumbnail">
 
-  
+  </picture>
 
+</figure>
+
+        <div class="card-body">
+          <h2 class="card-title text-lowercase"><h3>Symbolic Search for Diverse Plans and Maximum Utility</h3></h2>
+          <p class="card-text"></p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
 </div>
+  </div>
+</div>
+
+          </article>
+
+        </div>
 
     </div>
 
@@ -124,7 +154,7 @@
 
     <footer class="sticky-bottom mt-5">
       <div class="container">
-        &copy; Copyright 2024 David  Speck. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+        © Copyright 2024 David  Speck. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
 
       </div>
     </footer>
