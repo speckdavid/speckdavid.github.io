@@ -1,8 +1,6 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-      <a name="{{entry.key}}" class="anchor" id="{{entry.key}}"></a>
-
       <div class="row">
         <div class="col-sm-2 abbr">
         <!--{%- if entry.abbr -%}
@@ -70,6 +68,14 @@
               {%- endunless -%}
             {%- endif -%}
           {%- endfor %}
+          <!-- Anchor -->
+          <style>
+            /* CSS for scroll margin */
+            #{{entry.key}} {
+              scroll-margin-top: 60px;
+            }
+          </style>
+          <a href="#{{entry.key}}">#</a>
           </div>
           <!-- Title -->
           <div class="title">{{entry.title}}</div>
