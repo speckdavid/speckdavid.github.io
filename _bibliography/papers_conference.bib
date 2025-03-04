@@ -27,6 +27,7 @@
   booktitle =    "Proceedings of the Thirty-Fourth International Conference on Automated Planning and Scheduling (ICAPS 2024)",
   year =         "2024",
   publisher =    "AAAI Press",
+  pages =        "546--554",
   abstract =     "<p>Automated problem reformulation is a common technique in classical planning to identify and exploit problem structures. Decoupled search is an approach that automatically decomposes planning tasks based on their causal structure, often significantly reducing the search effort. However, its broad applicability is limited by the need for specialized algorithms. In this paper, we present an approach that embodies decoupled search for non-optimal planning through a novel task transformation. Specifically, given a task and a decomposition, we create a transformed task such that the state space of the transformed task is isomorphic to that of decoupled search on the original task. This eliminates the need for specialized algorithms and allows the use of various planning technology in the decoupled-search framework. Empirical evaluation shows that our method is empirically competitive with specialized decoupled algorithms and favorable to other related problem reformulation techniques.</p>"  
 }
 
@@ -41,6 +42,7 @@
   booktitle =    "Proceedings of the Thirty-Fourth International Conference on Automated Planning and Scheduling (ICAPS 2024)",
   year =         "2024",
   publisher =    "AAAI Press",
+  pages =        "276--280",
   abstract =     "<p>Saturated post-hoc optimization is a powerful method for computing admissible heuristics for optimal classical planning. The approach solves a linear program (LP) for each state encountered during the search, which is computationally demanding. In this paper, we theoretically and empirically analyze to which extent we can reuse an LP solution of one state for another. We introduce a novel sensitivity analysis that can exactly characterize the set of states for which a unique LP solution is optimal. Furthermore, we identify two properties of the underlying LPs that affect reusability. Finally, we introduce an algorithm that optimizes LP solutions to generalize well to other states. Our new algorithms significantly reduce the number of necessary LP computations.</p>"  
 }
 
@@ -55,6 +57,7 @@
   booktitle =    "Proceedings of the Twenty-Sixth European Conference on Artificial Intelligence (ECAI 2023)",
   year =         "2023",
   publisher =    "IOS Press",
+  pages =        "1044--1051",
   abstract =     "<p>Cost partitioning is the foundation of today's strongest heuristics for optimal classical planning. However, computing a cost partitioning for each evaluated state is prohibitively expensive in practice. Thus, existing approaches make an approximation and compute a cost partitioning only for a set of sampled states, and then reuse the resulting heuristics for all other states evaluated during the search. In this paper, we present exact methods for cost partitioning heuristics based on linear programming that fully preserve heuristic accuracy while minimizing computational cost. Specifically, we focus on saturated post-hoc optimization and establish several sufficient conditions for when reusing a cost partitioning computed for one state preserves the estimates for other states, mainly based on a sensitivity analysis of the underlying linear program. Our experiments demonstrate that our theoretical results transfer into practice, and that our exact cost partitioning algorithms are competitive with the strongest approximations currently available,while usually requiring fewer linear program evaluations.</p>"  
 }
 
@@ -69,6 +72,7 @@
   booktitle =    "Proceedings of the Twenty-Sixth European Conference on Artificial Intelligence (ECAI 2023)",
   year =         "2023",
   publisher =    "IOS Press",
+  pages =        "453--460",
   abstract =     "<p>Combinatorial reconfiguration is the problem of transforming one solution of a combinatorial problem into another, where each transformation may only apply small changes to a solution and may not leave the solution space. An important example is the independent set reconfiguration (ISR) problem, where an independent set of a graph (a subset of its vertices without edges between them) has to be transformed into another by a sequence of transformations that can replace a vertex in the current subset such that the new subset is still an independent set. The 1st Combinatorial Reconfiguration Challenge (CoRe Challenge 2022) was a competition focused on the ISR problem. The PARIS team successfully participated with two solvers that model the ISR problem as a planning task and employ different planning techniques for solving it. In this work, we describe these models and solvers. For a fair comparison to competing ISR approaches, we re-run the entire competition under equal computational conditions. Besides showcasing the success of planning technology, we hope that this work will create a cross-fertilization of the two research fields.</p>"  
 }
 
