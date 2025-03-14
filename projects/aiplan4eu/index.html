@@ -2,16 +2,17 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://speckdavid.github.io/" />    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
     
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>David  Speck | Page not found</title>
+    <title>David  Speck | <h3>Symbolic Search for Diverse Plans and Maximum Utility</h3></title>
     <meta name="author" content="David  Speck" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Academic website of David Speck.
+" />
     <meta name="keywords" content="ai-planning, planning, academic-website" />
 
 
@@ -32,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img/prof_pic.jpg"/>
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://speckdavid.github.io/404.html">
+    <link rel="canonical" href="https://speckdavid.github.io/projects/aiplan4eu/">
     
     <!-- Dark Mode -->
     
@@ -104,12 +105,36 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title"><h3>Symbolic Search for Diverse Plans and Maximum Utility</h3></h1>
+            <p class="post-description"></p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://speckdavid.github.io/">here</a>.</p>
+            <p>The objective in AI planning is to find a solution for a given planning task, i.e., a single (possibly optimal) plan that solves the task. In academic research, one of the most common planning variants is classical planning, which can be used to solve a variety of sequential decision making problems and is captured by solvers such as Fast Downward and Pyperplan in the Unified Planning Framework (UPF). In practice, however, classical planning is often too restricted to model and solve real-world planning tasks. We will enhance the UPF with the following four expressive extensions to the traditional classical planning formalism:</p>
+
+<ul>
+  <li>multiple diverse solutions instead of a single solution,</li>
+  <li>soft and oversubscribed goal description instead of a fixed description</li>
+  <li>state-dependent action costs instead of constant action costs, and</li>
+  <li>complex state description with derived predicates and axioms instead of basic variables.</li>
+</ul>
+
+<p>For this, we will use the symbolic search planner we developed, <a href="https://github.com/speckdavid/symk" target="_blank" rel="noopener noreferrer">SymK</a>, as the underlying planning engine to add these four expressive extensions to the UPF. Not only is SymK one of the few planners that supports these extensions, it is also among the state of the art for the traditional setting of optimal classical planning.</p>
+
+<p>This project is funded by the <a href="https://www.aiplan4eu-project.eu" target="_blank" rel="noopener noreferrer">AIPlan4EU project</a>.</p>
+
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/aiplan4eu-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/aiplan4eu-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/aiplan4eu-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/aiplan4eu.png" title="aiplan4eu.png">
+
+  </picture>
+
+</figure>
 
           </article>
 
