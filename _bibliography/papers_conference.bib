@@ -1,5 +1,46 @@
 ---
 ---
+@InProceedings{speck-helmert-ecai2025,
+  bibtex_show =  "true",
+  author =       "David Speck and Malte Helmert",
+  title =        "On Performance Guarantees for Symbolic Search in Classical Planning",
+  editor =       "In{\^{e}}s and Aniello Murano",
+  booktitle =    "Proceedings of the Twenty-Eighth European Conference on Artificial Intelligence (ECAI 2025)",
+  year =         "2025",
+  publisher =    "IOS Press",
+  abstract =     "<p>We show that standard symbolic search algorithms for classical planning can incur exponential overhead compared to explicit blind search in the presence of complex conditions and effects. To address this problem, we explore conjunctive partitioning in classical planning and present fully automated, domain-independent methods for representing actions and goal conditions in a partitioned form. We show that one of our methods, based on the Tseitin transformation, yields a symbolic search algorithm that in the worst case incurs only a polynomial overhead and in the best case can be exponentially more efficient than its explicit counterpart. Finally, our empirical evaluation shows that our theoretical findings carry over into practice: our algorithms solve planning problems previously intractable for symbolic search, and perform favorably overall compared to traditional symbolic search, explicit blind search, and other state-of-the-art planners.</p>"
+}
+
+@InProceedings{salerno-et-al-ecai2025,
+  bibtex_show =  "true",
+  author =       "Mauricio Salerno and Raquel Fuentetaja and David Speck and Jendrik Seipp",
+  title =        "Merging Cartesian Abstractions for Classical Planning",
+  editor =       "In{\^{e}}s and Aniello Murano",
+  booktitle =    "Proceedings of the Twenty-Eighth European Conference on Artificial Intelligence (ECAI 2025)",
+  year =         "2025",
+  publisher =    "IOS Press",
+  abstract =     "<p>Building a single Cartesian abstraction is usually not enough to obtain an informative heuristic for classical planning. Therefore, state-of-the-art methods decompose the original task into subtasks---for example, one per goal atom---and compute an abstraction for each individual subtask. However, building a single abstraction suffers from diminishing returns, while building multiple abstractions loses information about how to achieve the associated subtasks jointly. We interpolate between these two extremes by first considering subtasks individually and then merging some of the resulting abstractions. We introduce an efficient algorithm for merging pairs of Cartesian abstractions using their refinement hierarchies and show that it yields more informative abstractions in less time than a naive approach. Furthermore, we prove that adding merged abstractions can only improve a cost-partitioned heuristic based on saturated post-hoc optimization and that for maximal heuristic values, we need to keep the individual abstractions. Our experiments show that merging abstractions drastically improves the resulting heuristics.</p>"
+}
+
+@InProceedings{behnke-et-al-jelia2025,
+  bibtex_show =  "true",
+  code =         "https://github.com/galvusdamor/decoupling-transformer-sat",
+  data =         "https://doi.org/10.5281/zenodo.15848556",
+  author =       "Gregor Behnke and David Speck and Daniel Gnad",
+  title =        "AxSAT -- Bringing Axioms to SAT Planning",
+  editor =       "Besik Dundua and Temur Kutsia and Giovanni Casini",
+  booktitle =    "Proceedings of the Nineteenth European Conference on Logics in Artificial Intelligence (JELIA 2025)",
+  year =         "2025",
+  publisher =    "Springer",
+  abstract =     "<p>Planning as SAT is, in addition to explicit and symbolic search, one of the main approaches for solving planning problems.
+	Such planners proved very successful, especially in combinatorially complex domains.
+	SAT-based planning has to date focused on the core formalisms of planning.
+	Notably, there is no SAT-based planner that supports axioms and derived predicates.
+	In this paper, we present our new planner AxSAT that supports axioms as well as conditional effects.
+	Furthermore, we show how to allow for action parallelism using the $\exists$-step encoding in the presence of axioms.
+	Our empirical evaluation shows that AxSAT performs favorably compared to state-of-the-art approaches for satisficing classical planning with axioms, and provides complementary capabilities.</p>"  
+}
+
 @InProceedings{speck-et-al-aaai2025,
   bibtex_show =  "true",
   pdf =          "speck-et-al-aaai2025.pdf",
