@@ -1,5 +1,27 @@
 ---
 ---
+@InProceedings{hoeft-et-al-kr2025,
+  bibtex_show =  "true",
+  author =       "Paul H{\"o}ft and David Speck and Jendrik Seipp",
+  title =        "Representing Perfect Saturated Cost Partitioning Heuristics in Classical Planning",
+  editor =       "Magdalena Ortiz, Renata Wassermann, and Torsten Schaub",
+  booktitle =    "Proceedings of Twenty-Second International Conference on Principles of Knowledge Representation and Reasoning (KR 2025)",
+  year =         "2025",
+  publisher =    "IJCAI Organization",
+  abstract =     "<p>Saturated cost partitioning (SCP) is one of the strongest methods for admissibly combining heuristics for optimal classical planning. The quality of an SCP heuristic depends heavily on the order in which its component heuristics are considered. For high accuracy, it is essential to maximize over multiple SCP heuristics computed using different component orders. However, for n component heuristics, even enumerating all n! orders is usually infeasible. Consequently, previous work resorted to using greedy algorithms and local optimization. In contrast, we present the first practical method for computing the perfect SCP heuristic that is equivalent to considering all component orders. We show that a set of SCP heuristics forms an additive disjunctive heuristic, which allows us to concisely represent component orders as a directed acyclic graph. Furthermore, once certain components have been considered, the order of the remaining components often becomes irrelevant. By exploiting this characteristic, we can reduce the size of the heuristic representation by several orders of magnitude in practice. Finally, our work makes it possible to compare the quality of existing SCP methods with that of the perfect SCP heuristic, revealing that existing approximations are nearly optimal for standard benchmarks.</p>"
+}
+
+@InProceedings{gnad-et-al-kr2025,
+  bibtex_show =  "true",
+  author =       "Daniel Gnad and Markus Hecher and Sarah Gaggl and Dominik Rusovac and David Speck and Johannes K. Fichte",
+  title =        "Interactive Exploration of Plan Spaces",
+  editor =       "Magdalena Ortiz, Renata Wassermann, and Torsten Schaub",
+  booktitle =    "Proceedings of Twenty-Second International Conference on Principles of Knowledge Representation and Reasoning (KR 2025)",
+  year =         "2025",
+  publisher =    "IJCAI Organization",
+  abstract =     "<p>Many planning applications require not only a single solution but benefit substantially from having a set of possible plans from which users can select, for example, when explaining plans. For decades, research in classical AI planning has primarily focused on quickly finding single plans. Only recently have researchers started to investigate preferences, enumerate plans by top-k planning, or count plans to reason about the plan space. Unfortunately, reasoning about the plan space is computationally extremely hard and feeding many similar plans to the user is hardly practical. To circumvent computational shortcomings while still being able to reason about variability in plans, faceted actions have been introduced very recently. These are meaningful actions that can be used by some plan but are not required by all plans. Enforcing or forbidding such facets allows for navigating even large plan spaces while ensuring desired properties quickly and step by step. In this paper, we illustrate an industrial challenge where reasoning with facets enables targeted plan space navigation. We present an approach to handle large plan spaces iteratively and interactively.</p>"
+}
+
 @InProceedings{speck-helmert-ecai2025,
   bibtex_show =  "true",
   author =       "David Speck and Malte Helmert",
