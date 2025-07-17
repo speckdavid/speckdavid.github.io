@@ -15,9 +15,9 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-          <em>David Speck</em>
+          <b>ICAPS Best Dissertation Award</b>
           </div>
-          has won the <a href="https://www.icaps-conference.org/icaps-awards/">ICAPS Best Dissertation Award</a> at the Thirty-Fourth International Conference on Automated Planning and Scheduling (ICAPS 2024) for his dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a>.
+          for the PhD dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a> at the Thirty-Fourth International Conference on Automated Planning and Scheduling (<a href="https://www.icaps-conference.org/icaps-awards/">ICAPS 2024</a>).
         </div>
       </div>
     </li>
@@ -29,9 +29,10 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-            <em>David Speck</em> and Daniel Gnad
+            <b>ICAPS Best Paper Award</b> 
           </div>
-          received the Best Paper Award for the paper <a href="../assets/pdf/speck-gnad2024.pdf">Decoupled Search for the Masses: A Novel Task Transformation for Classical Planning</a> at the the Thirty-Fourth International Conference on Automated Planning and Scheduling (<a href="https://icaps24.icaps-conference.org/program/awards/">ICAPS 2024</a>).
+          for the paper <a href="../assets/pdf/speck-gnad-icaps2024.pdf">Decoupled Search for the Masses: A Novel Task Transformation for Classical Planning</a> at the Thirty-Fourth International Conference on Automated Planning and Scheduling (<a href="https://icaps24.icaps-conference.org/program/awards/">ICAPS 2024</a>).
+          (with Daniel Gnad)
         </div>
       </div>
     </li>
@@ -40,6 +41,7 @@ nav: true
 
 <div class="publications">
   <h2 class="year">2023</h2>
+
   <ol class="bibliography">
     <li>
       <div class="row">
@@ -47,9 +49,10 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-          Remo Christen, Salomé Eriksson, Michael Katz, Christian Muise, Florian Pommerening, Jendrik Seipp, Silvan Sievers and <em>David Speck</em>
+          <b>Winner of the Optimal Classical Track</b>
           </div>
-          achieved 4x first place and 2x second place at the 2nd Combinatorial Reconfiguration Challenge (<a href="https://core-challenge.github.io/2023/">CoRe Challenge 2023</a>) with the <a href="../assets/pdf/christen-et-al-ecai2023.pdf">PARIS 2023</a> solver they developed.
+          with the planning system <a href="../assets/pdf/drexler-et-al-ipc2023a.pdf">Ragnarok</a> at the 10th International Planning Competition (<a href="https://ipc2023-classical.github.io/">IPC 2023</a>) at ICAPS 2023.
+          (with Dominik Drexler, Daniel Gnad, Paul Höft, Jendrik Seipp and Simon Ståhlberg)
         </div>
       </div>
     </li>
@@ -62,9 +65,10 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-          Dominik Drexler, Daniel Gnad, Paul Höft, <em>David Speck</em>, Jendrik Seipp and Simon Ståhlberg
+          <b>Runner-Up of the Optimal Classical Track</b>
           </div>
-          have won the Optimal Classical Track of the International Planning Competition 2023 (<a href="https://ipc2023-classical.github.io/">IPC 2023</a>) with the planning system Ragnarok.
+          with the planning system <a href="../assets/pdf/drexler-et-al-ipc2023b.pdf">Odin</a> at the 10th International Planning Competition (<a href="https://ipc2023-classical.github.io/">IPC 2023</a>) at ICAPS 2023.
+          (with Dominik Drexler and Jendrik Seipp)
         </div>
       </div>
     </li>
@@ -77,9 +81,10 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-          Dominik Drexler, <em>David Speck</em> and Jendrik Seipp
+          <b>4x First Place, 2x Second Place (in six tracks)</b>
           </div>
-          have won the second prize in the Optimal Classical Track of the International Planning Competition 2023 (<a href="https://ipc2023-classical.github.io/">IPC 2023</a>) with the planning system Odin.
+          with the planning system <a href="../assets/pdf/christen-et-al-ecai2023.pdf">PARIS 2023</a> at the 2nd Combinatorial Reconfiguration Challenge (<a href="https://core-challenge.github.io/2023/">CoRe Challenge 2023</a>).
+          (with Remo Christen, Salomé Eriksson, Michael Katz, Christian Muise, Florian Pommerening, Jendrik Seipp and Silvan Sievers)
         </div>
       </div>
     </li>
@@ -95,9 +100,9 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-            <em>David Speck</em>
+            <b>Wolfgang-Gentner-Award for Young Researchers</b>
           </div>
-          received the <a href="https://uni-freiburg.de/zuv/service/ehrungen-und-preise/freiburger-nachwuchsfoerderpreise/technische-fakultaet/">Wolfgang-Gentner-Award for Young Researchers</a> for his dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a> from the the Faculty of Engineering at the University of Freiburg.
+          for the PhD dissertation PhD dissertation <a href="../assets/pdf/speck-phd2022.pdf">Symbolic Search for Optimal Planning with Expressive Extensions</a>, granted by the Faculty of Engineering at the University of Freiburg (<a href="https://uni-freiburg.de/universitaet/herausragende-leistungen/freiburger-foerderpreise-fuer-wissenschaftlerinnen-in-fruehen-karrierephasen/foerderpreise-der-technischen-fakultaet/#Wolfgang-Gentner-Nachwuchsf%C3%B6rderpreis">more info</a>).
         </div>
       </div>
     </li>
@@ -110,10 +115,10 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-          Remo Christen, Salomé Eriksson, Michael Katz, Emil Keyder, Christian Muise, Alice Petrov, 
-          Florian Pommerening, Jendrik Seipp, Silvan Sievers and <em>David Speck</em>
+          <b>4x First Place, 3x Second Place, 1x Third Place (in nine tracks)</b>
           </div>
-          achieved 4x first place, 3x second place, 1x third place in nine tracks at the 1st Combinatorial Reconfiguration Challenge (<a href="https://core-challenge.github.io/2022/#home">CoRe Challenge 2022</a>) with the <a href="../assets/pdf/christen-etal-core2022.pdf">PARIS</a> solver they developed.
+          with the planning system <a href="../assets/pdf/christen-etal-core2022.pdf">PARIS</a> at the 1st Combinatorial Reconfiguration Challenge (<a href="https://core-challenge.github.io/2022/#home">CoRe Challenge 2022</a>).
+          (with Remo Christen, Salomé Eriksson, Michael Katz, Emil Keyder, Christian Muise, Alice Petrov, Florian Pommerening, Jendrik Seipp and Silvan Sievers)
         </div>
       </div>
     </li>
@@ -129,9 +134,10 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-            <em>David Speck</em>, David Borukhson, Robert Mattmüller and Bernhard Nebel
+            <b>Best Student Paper Runner-Up Award</b>
           </div>
-          received the Best Student Paper Runner-Up Award for the paper <a href="../assets/pdf/speck-etal-icaps2021.pdf">On the Compilability and Expressive Power of State-Dependent Action Costs</a> at the 31st International Conference on Automated Planning and Scheduling (<a href="https://icaps21.icaps-conference.org/awards/">ICAPS 2021</a>).
+          for the paper <a href="../assets/pdf/speck-etal-icaps2021.pdf">On the Compilability and Expressive Power of State-Dependent Action Costs</a> at (<a href="https://icaps21.icaps-conference.org/awards/">ICAPS 2021</a>).
+          (with David Borukhson, Robert Mattmüller and Bernhard Nebel)
         </div>
       </div>
     </li>
@@ -147,9 +153,10 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-            Florian Geißer and <em>David Speck</em>
+          <b>Winner of the Discrete Markov Decision Process Track</b>
           </div>
-          have won the International Probabilistic Planning Competition 2018 (<a href="https://ipc2018-probabilistic.bitbucket.io/#results">IPPC2018</a>) with the planning system <a href="../assets/pdf/geisser-speck-ippc2018.pdf">PROST-DD</a>.
+          with the planning system <a href="../assets/pdf/geisser-speck-ippc2018.pdf">PROST-DD</a> at the 6th International Probabilistic Planning Competition (<a href="https://ipc2018-probabilistic.bitbucket.io/#results">IPPC2018</a>) at ICAPS 2018.
+          (with Florian Geißer)
         </div>
       </div>
     </li>
@@ -168,7 +175,7 @@ nav: true
         </div>
         <div class="col-sm-10">
           <div class="author">
-          Christoph-Rüchardt Scholarship (1 year duration)  
+          <b>Christoph-Rüchardt Scholarship</b> (1 year duration)
           </div>
           Granted by the <a href="https://www.tf.uni-freiburg.de/en">Faculty of Engineering</a> (<a href="https://uni-freiburg.de/en/">University of Freiburg</a>) for outstanding master’s students who have demonstrated exceptional academic merit in their undergraduate studies.
         </div>
