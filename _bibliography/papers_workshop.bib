@@ -63,3 +63,90 @@
                   analysis of their performance highlights the strengths and 
                   weaknesses of the individual approaches.</p>"
 }
+
+@InProceedings{christen-et-al-icaps2023wsspark,
+  bibtex_show =  "true",
+  pdf =          "christen-et-al-icaps2023wsspark.pdf",
+  author =       "Remo Christen and Salom{\'e} Eriksson and Michael Katz and Christian Muise
+                  and Alice Petrov and Florian Pommerening and Jendrik Seipp and Silvan Sievers and David Speck",
+  title =        "{PARIS}: Planning Algorithms for Reconfiguring Independent Sets",
+  booktitle =    "ICAPS 2023 Scheduling and Planning Applications woRKshop (SPARK)",
+  year =         "2023",
+  note =         "Superseded by the ECAI 2023 paper with the same name",
+  abstract =     "<p>Combinatorial reconfiguration studies how one solution of a combinatorial problem can be transformed into another. The transformation can only make small local changes and may not leave the solution space. An important example is the independent set reconfiguration (ISR) problem, where an independent set of a graph (a subset of its vertices without edges between them) has to be transformed into another one by a sequence of modifications that remove a vertex or add another that is not adjacent to any vertex in the set. The 1st Combinatorial Reconfiguration Challenge (CoRe Challenge 2022) was a competition focused on the ISR problem. Our team participated with two solvers that model the ISR problem as a planning problem and employ different planning techniques for solving it. They successfully competed in the challenge and were awarded 4 first, 3 second, and 3 third places across 9 tracks. In this work, we present the ISR problem as a new problem to the planning community and describe the planning techniques used in our solvers. We re-ran the entire competition under equal computational conditions to allow for a fair comparison. Besides showcasing the success of planning technology, we hope that this work will create a cross-fertilization of the two research fields.</p>"
+}
+
+@InProceedings{christen-et-al-icaps2023wshsdip,
+  bibtex_show =  "true",
+  pdf =          "christen-et-al-icaps2023wshsdip.pdf",
+  author =       "Remo Christen and Salom{\'e} Eriksson and Michael Katz and Christian Muise
+                  and Alice Petrov and Florian Pommerening and Jendrik Seipp and Silvan Sievers and David Speck",
+  title =        "{PARIS}: Planning Algorithms for Reconfiguring Independent Sets",
+  booktitle =    "ICAPS 2023 Workshop on Heuristics and Search for Domain-independent Planning (HSDIP)",
+  year =         "2023",
+  note =         "Superseded by the ECAI 2023 paper with the same name",
+  abstract =     "<p>Combinatorial reconfiguration studies how one solution of a combinatorial problem can be transformed into another. The transformation can only make small local changes and may not leave the solution space. An important example is the independent set reconfiguration (ISR) problem, where an independent set of a graph (a subset of its vertices without edges between them) has to be transformed into another one by a sequence of modifications that remove a vertex or add another that is not adjacent to any vertex in the set. The 1st Combinatorial Reconfiguration Challenge (CoRe Challenge 2022) was a competition focused on the ISR problem. Our team participated with two solvers that model the ISR problem as a planning problem and employ different planning techniques for solving it. They successfully competed in the challenge and were awarded 4 first, 3 second, and 3 third places across 9 tracks. In this work, we show how to model ISR problems as planning tasks and describe the planning techniques used in our solvers. For a fair comparison of ISR approaches, we re-run the entire competition under equal computational conditions. Besides showcasing the success of planning technology, we hope that this work will create a cross-fertilization of the two research fields.</p>"
+}
+
+@InProceedings{speck-et-al-icaps2020wsprl,
+  bibtex_show =  "true",
+  arxiv =        "2006.08246",
+  pdf =          "speck-etal-prl2020.pdf",
+  code =         "https://github.com/speckdavid/rl-plan",
+  title =        "Learning Heuristic Selection with Dynamic Algorithm Configuration",
+  author =       "David Speck and Andr{\'e} Biedenkapp and Frank Hutter and Robert Mattm{\"u}ller and Marius Lindauer",
+  booktitle =    "ICAPS 2020 Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)",
+  year =         "2020",
+  pages =        "61--69",
+  note =         "Superseded by the ICAPS 2021 paper with the same name",
+  abstract =     "A key challenge in satisficing planning is to use multiple 
+                  heuristics within one heuristic search. An aggregation of 
+                  multiple heuristic estimates, for example by taking the 
+                  maximum, has the disadvantage that bad estimates of a single 
+                  heuristic can negatively affect the whole search. Since the 
+                  performance of a heuristic varies from instance to instance, 
+                  approaches such as algorithm selection can be successfully 
+                  applied. In addition, alternating between multiple heuristics 
+                  during the search makes it possible to use all heuristics 
+                  equally and improve performance. However, all these approaches 
+                  ignore the internal search dynamics of a planning system, 
+                  which can help to select the most helpful heuristics for the 
+                  current expansion step. We show that dynamic algorithm 
+                  configuration can be used for dynamic heuristic selection 
+                  which takes into account the internal search dynamics of a 
+                  planning system. Furthermore, we prove that this approach 
+                  generalizes over existing approaches and that it can 
+                  exponentially improve the performance of the heuristic search. 
+                  To learn dynamic heuristic selection, we propose an approach 
+                  based on reinforcement learning and show empirically that 
+                  domain-wise learned policies, which take the internal search 
+                  dynamics of a planning system into account, can exceed 
+                  existing approaches in terms of coverage."
+}
+
+@InProceedings{drexler-et-al-icaps2020wshsdip,
+  bibtex_show =  "true",
+  pdf =          "drexler-etal-hsdip2020.pdf",
+  code =         "https://zenodo.org/record/4065414",
+  data =         "https://zenodo.org/record/4065414",
+  title =        "Subset-Saturated Transition Cost Partitioning for Optimal Classical Planning",
+  author =       "Dominik Drexler and David Speck and Robert Mattm{\"u}ller",
+  booktitle =    "ICAPS 2020 Workshop on Heuristics and Search for Domain-Independent Planning (HSDIP)",
+  year =         "2020",
+  pages =        "23--31",
+  note =         {Superseded by the ICAPS 2021 paper "Subset-Saturated Transition Cost Partitioning"},
+  abstract =     "Cost partitioning admissibly combines the information from 
+                  multiple heuristics for state-space search. We use a greedy 
+                  method called saturated cost partitioning that considers the 
+                  heuristics in sequence and assigns the minimal fraction of 
+                  the remaining costs that it needs to preserve the heuristic 
+                  estimates. In this work, we address the problem of using more 
+                  expressive transition cost functions with saturated cost 
+                  partitioning to obtain stronger heuristics. Our contribution 
+                  is subset-saturated transition cost partitioning that combines 
+                  the concepts of using transition cost functions and 
+                  prioritizing states that look more important during the 
+                  search. Our empirical evaluation shows that this approach 
+                  still causes too much computational overhead but leads to more 
+                  informed heuristics."
+}

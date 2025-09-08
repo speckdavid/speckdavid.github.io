@@ -26,18 +26,19 @@ nav: true
 </div>
 <div class="toggle-container">
   <label class="switch">
-    <input type="checkbox" id="workshop-toggle" checked>
+    <input type="checkbox" id="workshop-toggle">
     <span class="slider"></span>
   </label>
   <span class="toggle-label">Workshop publications</span>
 </div>
 <div class="toggle-container">
   <label class="switch">
-    <input type="checkbox" id="other-toggle" checked>
+    <input type="checkbox" id="other-toggle">
     <span class="slider"></span>
   </label>
   <span class="toggle-label">Other publications</span>
 </div>
+<!--
 <div class="toggle-container">
   <label class="switch">
     <input type="checkbox" id="superseded-toggle">
@@ -45,6 +46,7 @@ nav: true
   </label>
   <span class="toggle-label">Superseded publications</span>
 </div>
+-->
 
 {%- for y in page.years %}
   <h2 class="year">{{ y }}</h2>
@@ -60,9 +62,11 @@ nav: true
   <div class="other-on" style="display: none;">
     {% bibliography -f papers_other -q @*[year={{ y }}]* %}
   </div>
+  <!--
   <div class="superseded-on" style="display: none;">
     {% bibliography -f papers_superseded -q @*[year={{ y }}]* %}
   </div>
+  -->
 {% endfor %}
 
 <script>
@@ -84,7 +88,7 @@ nav: true
     initializeToggle("journal-toggle", "journal-on");
     initializeToggle("workshop-toggle", "workshop-on");
     initializeToggle("other-toggle", "other-on");
-    initializeToggle("superseded-toggle", "superseded-on");
+    // initializeToggle("superseded-toggle", "superseded-on");
   }
 
   document.addEventListener("DOMContentLoaded", function () {

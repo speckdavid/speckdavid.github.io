@@ -8,6 +8,9 @@
   booktitle =    "Proceedings of Twenty-Second International Conference on Principles of Knowledge Representation and Reasoning (KR 2025)",
   year =         "2025",
   publisher =    "IJCAI Organization",
+  pdf =          "hoeft-et-al-kr2025.pdf",
+  code =         "https://doi.org/10.5281/zenodo.16606498",
+  data =         "https://doi.org/10.5281/zenodo.16606498",
   abstract =     "<p>Saturated cost partitioning (SCP) is one of the strongest methods for admissibly combining heuristics for optimal classical planning. The quality of an SCP heuristic depends heavily on the order in which its component heuristics are considered. For high accuracy, it is essential to maximize over multiple SCP heuristics computed using different component orders. However, for n component heuristics, even enumerating all n! orders is usually infeasible. Consequently, previous work resorted to using greedy algorithms and local optimization. In contrast, we present the first practical method for computing the perfect SCP heuristic that is equivalent to considering all component orders. We show that a set of SCP heuristics forms an additive disjunctive heuristic, which allows us to concisely represent component orders as a directed acyclic graph. Furthermore, once certain components have been considered, the order of the remaining components often becomes irrelevant. By exploiting this characteristic, we can reduce the size of the heuristic representation by several orders of magnitude in practice. Finally, our work makes it possible to compare the quality of existing SCP methods with that of the perfect SCP heuristic, revealing that existing approximations are nearly optimal for standard benchmarks.</p>"
 }
 
@@ -30,6 +33,9 @@
   booktitle =    "Proceedings of the Twenty-Eighth European Conference on Artificial Intelligence (ECAI 2025)",
   year =         "2025",
   publisher =    "IOS Press",
+  pdf =          "speck-helmert-ecai2025.pdf",
+  code =         "https://github.com/speckdavid/symk",
+  data =         "https://doi.org/10.5281/zenodo.16640080",
   abstract =     "<p>We show that standard symbolic search algorithms for classical planning can incur exponential overhead compared to explicit blind search in the presence of complex conditions and effects. To address this problem, we explore conjunctive partitioning in classical planning and present fully automated, domain-independent methods for representing actions and goal conditions in a partitioned form. We show that one of our methods, based on the Tseitin transformation, yields a symbolic search algorithm that in the worst case incurs only a polynomial overhead and in the best case can be exponentially more efficient than its explicit counterpart. Finally, our empirical evaluation shows that our theoretical findings carry over into practice: our algorithms solve planning problems previously intractable for symbolic search, and perform favorably overall compared to traditional symbolic search, explicit blind search, and other state-of-the-art planners.</p>"
 }
 
@@ -61,6 +67,27 @@
 	In this paper, we present our new planner AxSAT that supports axioms as well as conditional effects.
 	Furthermore, we show how to allow for action parallelism using the $\exists$-step encoding in the presence of axioms.
 	Our empirical evaluation shows that AxSAT performs favorably compared to state-of-the-art approaches for satisficing classical planning with axioms, and provides complementary capabilities.</p>"  
+}
+
+@InProceedings{speck-gnad-ijcai2025,
+  bibtex_show =  "true",
+  title =        "Decoupled Search for the Masses: A Novel Task Transformation for Classical Planning (Extended Abstract)",
+  pdf =          "speck-gnad-ijcai2025.pdf",
+  code =         "https://github.com/speckdavid/decoupling-transformer",
+  data =         "https://doi.org/10.5281/zenodo.10777534",
+  author =       "David Speck and Daniel Gnad",
+  editor =       "James Kwok",
+  booktitle =    "Proceedings of the 34th International Joint
+                  Conference on Artificial Intelligence (IJCAI 2025)",
+  publisher =    "IJCAI",
+  year =         "2025",
+  note =         "<b>Note:</b> This paper was invited for submission to the Best Papers from Sister Conferences Track, based on the ICAPS 2024 Best Paper with the same name",
+  abstract =     "<p>Classical planning provides a framework for solving sequential decision-making problems, i.e., finding a sequence of actions that transforms the current state of the world into a state that satisfies a desired goal condition. 
+  Planning tasks are modeled in a logic that describes the environment and its dynamics. 
+  It is well known that the specific problem formulation can significantly affect the performance of planning systems solving problems like the Rubik's Cube or finding algorithms for matrix multiplication.
+  In this work, we propose a domain-general problem reformulation that embodies decoupled search, a search-reduction technique from classical planning and model checking. 
+  Decoupled search decomposes a given problem to exploit its structure, achieving exponential reductions over other search techniques. 
+  We show that decoupled search can be captured exactly as a task reformulation and that, on many benchmark domains, it performs as good and sometimes even better than a native decoupled-search implementation.</p>"
 }
 
 @InProceedings{speck-et-al-aaai2025,
