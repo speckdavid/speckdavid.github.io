@@ -3,7 +3,7 @@ layout: page
 permalink: /patents/
 title: Patents
 description:
-years: [2021,2020]
+years: [2024,2021]
 nav: true
 ---
 <!-- _pages/patents.md -->
