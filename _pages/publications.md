@@ -26,14 +26,14 @@ nav: true
 </div>
 <div class="toggle-container">
   <label class="switch">
-    <input type="checkbox" id="workshop-toggle">
+    <input type="checkbox" id="workshop-toggle" checked>
     <span class="slider"></span>
   </label>
   <span class="toggle-label">Workshop publications</span>
 </div>
 <div class="toggle-container">
   <label class="switch">
-    <input type="checkbox" id="other-toggle">
+    <input type="checkbox" id="other-toggle" checked>
     <span class="slider"></span>
   </label>
   <span class="toggle-label">Other publications</span>

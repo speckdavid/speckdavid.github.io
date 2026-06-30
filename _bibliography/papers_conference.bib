@@ -6,6 +6,7 @@
   title =        "Cartesian Abstraction Refinement for Simple Numeric Planning",
   booktitle =    "Proceedings of the Thirty-Sixth International Conference on Automated Planning and Scheduling (ICAPS 2026)",
   year =         "2026",
+  pages =        "420--424",
   pdf =          "schindler-et-al-icaps2026.pdf",
   code =         "https://doi.org/10.5281/zenodo.18999076",
   data =         "https://doi.org/10.5281/zenodo.18999076",
@@ -18,6 +19,10 @@
   title =        "Parallelizing Classical Planning: Critical Path Heuristics on the GPU",
   booktitle =    "Proceedings of the 19th Annual Symposium on Combinatorial Search (SoCS 2026)",
   year =         "2026", 
+  pdf =          "fritzsche-et-al-socs2026.pdf",
+  code =         "https://github.com/mrlab-ai/downward-h2",
+  data =         "https://zenodo.org/records/20423666",
+  abstract =     "<p>Despite the tremendous capabilities of modern hardware in performing parallel computations, all major classical planners are limited to single-threaded execution on the CPU. We show how the critical path heuristic h^m, commonly used in classical planning, can be parallelized and computed on a GPU. To that end, we construct a directed hypergraph, where nodes represent sets of atoms, associated with their reachability costs, and actions define weighted hyperedges. Iteratively performing convolutions on this hypergraph until a fixed point is reached allows us to efficiently compute h^m on the GPU. Furthermore, it enables batching, so we can compute the heuristic in parallel for multiple states. Our approach naturally supports multiple cost functions, allowing efficient computation of cost partitioning for h^m. We demonstrate experimentally that the GPU-based computation of h^m can achieve speedups of several orders of magnitude over the traditional computation on a CPU.</p>" 
 }
 
 @InProceedings{hoeft-et-al-kr2025,
