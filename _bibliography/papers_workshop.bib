@@ -1,12 +1,52 @@
 ---
 ---
 
+
+@InProceedings{speck-icaps2026wshsdip,
+  bibtex_show =  "true",
+  pdf =          "speck-icaps2026wshsdip.pdf",
+  data =         "https://doi.org/10.5281/zenodo.20596396",
+  code =         "https://doi.org/10.5281/zenodo.20596396",
+  author =       "David Speck",
+  title =        "Counting Plans with Heuristic State-Space Search",
+  booktitle =    "ICAPS 2026 Workshop on Heuristics and Search for Domain-independent Planning (HSDIP 2026)",
+  year =         "2026",
+  abstract =     "<p>We present A#, a heuristic search algorithm for counting optimal and cost-bounded plans in classical planning. We prove that A# terminates and correctly counts optimal plans, and describe how it extends to the cost-bounded case. A# compactly represents multiple action sequences reaching the same state using counters while exploiting heuristic estimates. An ablation study evaluates the impact of the modifications to A* used to obtain A#. Our experiments show that A# outperforms existing approaches, solving significantly more tasks overall and scaling to substantially higher plan counts (up to 10^92).</p>"
+}
+
+@InProceedings{petit-et-al-icaps2026wshsdip,
+  bibtex_show =  "true",
+  pdf =          "petit-et-al-icaps2026wshsdip.pdf",
+  data =         "https://doi.org/10.5281/zenodo.20607694",
+  code =         "https://doi.org/10.5281/zenodo.20607694",
+  author =       "Travis Rivera Petit and Simon Dold and David Speck and Malte Helmert",
+  title =        "Delete Relaxation with Axioms",
+  booktitle =    "ICAPS 2026 Workshop on Heuristics and Search for Domain-independent Planning (HSDIP 2026)",
+  year =         "2026",
+  abstract =     "<p>Existing approaches to delete-relaxation heuristics in classical planning with axioms are based on task transformations, three-valued logic, or answer set programming. We introduce three additional, novel methods that follow the task-transformation approach, internally compiling axioms away. We show that existing task-transformation approaches yield unsafe heuristics and conjecture a well-founded bridge to the three-valued logic approach, resulting in a dominance hierarchy over existing and new methods. Experimental evaluations show that our delete-relaxation methods perform favorably in overall coverage compared to the existing approaches, for both optimal planning with hmax and satisficing planning with hff.</p>"
+}
+
+@InProceedings{fritzsche-et-al-icaps2026wshsdip,
+  bibtex_show =  "true",
+  author =       "Markus Fritzsche and David Speck and Daniel Gnad and Simon St\r{a}hlberg",
+  title =        "Parallelizing Classical Planning: Critical Path Heuristics on the GPU",
+  booktitle =    "Proceedings of the 19th Annual Symposium on Combinatorial Search (SoCS 2026)",
+  year =         "2026",
+  pdf =          "fritzsche-et-al-icaps2026wdhsdip.pdf",
+  code =         "https://github.com/mrlab-ai/downward-h2",
+  data =         "https://zenodo.org/records/20423666",
+  note =         "Superseded by the SoCS 2026 paper with the same name",
+  abstract =     "<p>Despite the tremendous capabilities of modern hardware in performing parallel computations, all major classical planners are limited to single-threaded execution on the CPU. We show how the critical path heuristic h^m, commonly used in classical planning, can be parallelized and computed on a GPU. To that end, we construct a directed hypergraph, where nodes represent sets of atoms, associated with their reachability costs, and actions define weighted hyperedges. Iteratively performing convolutions on this hypergraph until a fixed point is reached allows us to efficiently compute h^m on the GPU. Furthermore, it enables batching, so we can compute the heuristic in parallel for multiple states. Our approach naturally supports multiple cost functions, allowing efficient computation of cost partitioning for h^m. We demonstrate experimentally that the GPU-based computation of h^m can achieve speedups of several orders of magnitude over the traditional computation on a CPU.</p>" 
+}
+
 @InProceedings{correa-et-at-ijcai2025wsxai,
   bibtex_show =  "true",
+  pdf =          "correa-et-at-ijcai2025wsxai.pdf",
   author =       "Augusto B. Corrêa and Johannes K Fichte and Sarah Gaggl and Daniel Gnad and Markus Hecher and Dominik Rusovac and David Speck",
   title =        "PlanPilot: Efficient Navigation in Plan Space",
-  booktitle =    "IJCAI 2025 Workshop on Explainable Artificial Intelligence (XAI)",
+  booktitle =    "IJCAI 2025 Workshop on Explainable Artificial Intelligence (XAI 2025)",
   year =         "2025",
+  note =         {Superseded by the KR 2025 paper "Interactive Exploration of Plan Spaces"},
   abstract =     "<p>Many planning applications require not only a single solution but benefit substantially from having a set of possible plans from which users can select according to preferences. Surprisingly, planning research has primarily focused on quickly finding single plans for decades. Only recently have researchers started to investigate plan enumeration by top-k planning, offering more flexibility to the user. But simply enumerating the k best plans is far from targeted due to the time-consuming nature of enumeration, likely feeding many similar plans to the user, and forcing the user to define filters beforehand. In fact, in extensive search spaces, enumeration is hardly practical. We present an approach and a tool called PlanPilot to navigate solution spaces of planning tasks iteratively and interactively. We build on answer-set programming (ASP) to restrict the plan space. To that end, we employ facets, which are meaningful actions that appear in some, but not all plans. Enforcing or forbidding such facets allows for navigating even large plan spaces while ensuring desired properties quickly and step by step.</p>"
 }
 
@@ -15,7 +55,7 @@
   pdf =          "gnad-speck-icaps2024wsweep.pdf",
   author =       "Daniel Gnad and David Speck",
   title =        "On an Attempt at Casting Orbit Search as a Task Transformation",
-  booktitle =    "ICAPS 2024 Workshop on Echoing (failed) Efforts in Planning (WEEP)",
+  booktitle =    "ICAPS 2024 Workshop on Echoing (failed) Efforts in Planning (WEEP 2024)",
   year =         "2024",
   abstract =     "<p>State-space reduction techniques are a powerful means to enhancing the performance of search-based planners. Recent work has shown that decoupled search, which compactly represents sets of states, can be cast as a task reformulation. Concretely, it is possible to exactly simulate the behavior and reduction of (non-optimal) decoupled search by applying a transformation to the input task and running regular search on the transformed task. In this work, we investigate if the same approach is feasible for symmetry breaking, in particular orbit space search (OSS). One of the challenges in this endeavor is that OSS dynamically computes a canonical representative of every state generated during search. To represent this computation as a task transformation, however, we need to fix the procedure at transformation time. This leads to reduced pruning potential, which we discuss in detail and verify empirically. We also discuss an approach that can fully simulate OSS, at the cost of vastly blowing-up the task size.</p>"
 }
@@ -25,7 +65,7 @@
   pdf =          "biedenkapp-etal-prl2022.pdf",
   title =        "Learning Domain-Independent Policies for Open List Selection",
   author =       "Andr{\'e} Biedenkapp and David Speck and Silvan Sievers and Frank Hutter and Marius Lindauer and Jendrik Seipp",
-  booktitle =    "ICAPS 2022 Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)",
+  booktitle =    "ICAPS 2022 Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL 2022)",
   year =         "2022",
   abstract =     "<p>Since its proposal over a decade ago, LAMA has been considered one of the best-performing 
                   satisficing classical planners. Its key component is heuristic search with multiple open lists, 
@@ -46,7 +86,7 @@
   data =         "http://doi.org/10.5281/zenodo.3235174",
   title =        "An Analysis of the Probabilistic Track of the {IPC} 2018",
   author =       "Florian Gei{\ss}er and David Speck and Thomas Keller",
-  booktitle =    "ICAPS 2019 Workshop on the International Planning Competition (WIPC)",
+  booktitle =    "ICAPS 2019 Workshop on the International Planning Competition (WIPC 2019)",
   year =         "2019",
   pages =        "27--35",
   abstract =     "<p>The International Planning Competition 2018 consisted of 
@@ -70,7 +110,7 @@
   author =       "Remo Christen and Salom{\'e} Eriksson and Michael Katz and Christian Muise
                   and Alice Petrov and Florian Pommerening and Jendrik Seipp and Silvan Sievers and David Speck",
   title =        "{PARIS}: Planning Algorithms for Reconfiguring Independent Sets",
-  booktitle =    "ICAPS 2023 Scheduling and Planning Applications woRKshop (SPARK)",
+  booktitle =    "ICAPS 2023 Scheduling and Planning Applications woRKshop (SPARK 2023)",
   year =         "2023",
   note =         "Superseded by the ECAI 2023 paper with the same name",
   abstract =     "<p>Combinatorial reconfiguration studies how one solution of a combinatorial problem can be transformed into another. The transformation can only make small local changes and may not leave the solution space. An important example is the independent set reconfiguration (ISR) problem, where an independent set of a graph (a subset of its vertices without edges between them) has to be transformed into another one by a sequence of modifications that remove a vertex or add another that is not adjacent to any vertex in the set. The 1st Combinatorial Reconfiguration Challenge (CoRe Challenge 2022) was a competition focused on the ISR problem. Our team participated with two solvers that model the ISR problem as a planning problem and employ different planning techniques for solving it. They successfully competed in the challenge and were awarded 4 first, 3 second, and 3 third places across 9 tracks. In this work, we present the ISR problem as a new problem to the planning community and describe the planning techniques used in our solvers. We re-ran the entire competition under equal computational conditions to allow for a fair comparison. Besides showcasing the success of planning technology, we hope that this work will create a cross-fertilization of the two research fields.</p>"
@@ -82,7 +122,7 @@
   author =       "Remo Christen and Salom{\'e} Eriksson and Michael Katz and Christian Muise
                   and Alice Petrov and Florian Pommerening and Jendrik Seipp and Silvan Sievers and David Speck",
   title =        "{PARIS}: Planning Algorithms for Reconfiguring Independent Sets",
-  booktitle =    "ICAPS 2023 Workshop on Heuristics and Search for Domain-independent Planning (HSDIP)",
+  booktitle =    "ICAPS 2023 Workshop on Heuristics and Search for Domain-independent Planning (HSDIP 2023)",
   year =         "2023",
   note =         "Superseded by the ECAI 2023 paper with the same name",
   abstract =     "<p>Combinatorial reconfiguration studies how one solution of a combinatorial problem can be transformed into another. The transformation can only make small local changes and may not leave the solution space. An important example is the independent set reconfiguration (ISR) problem, where an independent set of a graph (a subset of its vertices without edges between them) has to be transformed into another one by a sequence of modifications that remove a vertex or add another that is not adjacent to any vertex in the set. The 1st Combinatorial Reconfiguration Challenge (CoRe Challenge 2022) was a competition focused on the ISR problem. Our team participated with two solvers that model the ISR problem as a planning problem and employ different planning techniques for solving it. They successfully competed in the challenge and were awarded 4 first, 3 second, and 3 third places across 9 tracks. In this work, we show how to model ISR problems as planning tasks and describe the planning techniques used in our solvers. For a fair comparison of ISR approaches, we re-run the entire competition under equal computational conditions. Besides showcasing the success of planning technology, we hope that this work will create a cross-fertilization of the two research fields.</p>"
@@ -95,7 +135,7 @@
   code =         "https://github.com/speckdavid/rl-plan",
   title =        "Learning Heuristic Selection with Dynamic Algorithm Configuration",
   author =       "David Speck and Andr{\'e} Biedenkapp and Frank Hutter and Robert Mattm{\"u}ller and Marius Lindauer",
-  booktitle =    "ICAPS 2020 Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)",
+  booktitle =    "ICAPS 2020 Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL 2020)",
   year =         "2020",
   pages =        "61--69",
   note =         "Superseded by the ICAPS 2021 paper with the same name",
@@ -131,7 +171,7 @@
   data =         "https://zenodo.org/record/4065414",
   title =        "Subset-Saturated Transition Cost Partitioning for Optimal Classical Planning",
   author =       "Dominik Drexler and David Speck and Robert Mattm{\"u}ller",
-  booktitle =    "ICAPS 2020 Workshop on Heuristics and Search for Domain-Independent Planning (HSDIP)",
+  booktitle =    "ICAPS 2020 Workshop on Heuristics and Search for Domain-Independent Planning (HSDIP 2020)",
   year =         "2020",
   pages =        "23--31",
   note =         {Superseded by the ICAPS 2021 paper "Subset-Saturated Transition Cost Partitioning"},
